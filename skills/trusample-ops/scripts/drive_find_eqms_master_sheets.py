@@ -21,6 +21,7 @@ from pathlib import Path
 SCOPES = [
     "https://www.googleapis.com/auth/drive.readonly",
     "https://www.googleapis.com/auth/spreadsheets.readonly",
+    "https://www.googleapis.com/auth/script.projects.readonly",
 ]
 
 DEFAULT_NAME_PATTERNS = [
