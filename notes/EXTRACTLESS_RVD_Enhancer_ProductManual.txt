@@ -1,0 +1,167 @@
+
+--- SLIDE 1 ---
+PCRopsisTM Reagent RVD with RVD Enhancer
+For Research Use Only
+REF #: 78336001, 78336025, 78336100, 783361000
+Store at room temperature
+INTENDED USE
+PCRopsis™ Reagent RVD with RVD Enhancer is intended for nucleic acid extraction-free processing of liquid samples.
+PCRopsisTM Reagent RVD with RVD Enhancer					1 of 12
+
+--- SLIDE 2 ---
+01 INTRODUCTION
+PCRopsis™ Reagent RVD with RVD Enhancer is engineered to simultaneously bind a variety of reverse transcriptase quantitative polymerase chain reaction (RT-qPCR) and PCR inhibitors found in specimens, lyse cells and stabilize nucleic acids in a manner that's compatible with RT-qPCR / PCR. The product consists of a proprietary mixture of peptides, salts, stabilizers, buffers, sodium azide, and RVD Enhancer to achieve these tasks. Reagent RVD with RVD Enhancer allows for nucleic acid extraction-free sample processing without centrifugations or other sample manipulations, which may introduce errors, contaminants, and/or skew the representation of RNA fragments.
+02 PRODUCT SIZE
+03 STORAGE & STABILITY
+PCRopsis™ Reagent RVD with RVD Enhancer is shipped and stored at room temperature. The recommended storage temperature is:  4°C ~ 25°C
+PCRopsisTM Reagent RVD with RVD Enhancer					2 of 12
+
+--- SLIDE 3 ---
+04 TRANSPORT MEDIUM COMPATIBILITY
+RECOMMENDED:
+BD™ Universal Viral Transport System (UVT) 
+Quest V-C-M Medium 
+MedSchenker™ Smart Transport Medium
+SORFA Viral Transport Medium
+Mediums with formulations similar to BD™ are expected to be compatible 
+Phosphate buffered saline (PBS) 
+CDC VTM: Hank's Balanced Salt Solution (HBSS) + 2% Fetal Bovine Serum (FBS) 
+WHO VTM: Water with veal infusion broth + BSA + antibiotics
+
+
+NOT RECOMMENDED:
+Mediums containing guanidinium thiocyanate, alcohols, or other enzyme inhibitors 
+
+NOTE: the user must confirm the compatibility of Reagent RVD with RVD Enhancer with desired samples
+PCRopsisTM Reagent RVD with RVD Enhancer					3 of 12
+
+--- SLIDE 4 ---
+05 OVERVIEW OF PROTOCOL
+Reagent RVD
+with RVD Enhancer
+Test sample
+Mix 20 μL reagent + 20 μL Sample / well
+Heat reagent + sample mixture to 95°C for 10 minutes
+Use processed sample into your desired 
+RT-qPCR / PCR mixture (sample = <30% of total volume)
+NOTE: samples can be heated in a thermal cycler or heating block
+PCRopsisTM Reagent RVD with RVD Enhancer					4 of 12
+Recommended heating times:
+Mammalian:  5 minutes
+Viruses:         10 minutes
+Bacteria:       15 minutes
+NOTE: heating for a longer period of time does not negatively affect results
+
+--- SLIDE 5 ---
+06 WRITTEN PROTOCOL
+Thoroughly mix Reagent RVD with RVD Enhancer to ensure homogeneity, but avoid creating bubbles unnecessarily 
+Reagent RVD with RVD Enhancer has a hazy, white color when homogenized and normal settlement occurs if not regularly mixed 
+Mix 1 volume of sample (20 μL) with 1 volume of Reagent RVD with RVD Enhancer (20 μL) in a thin walled tube (0.2 ~ 0.6 mL) or 96-well PCR plate 
+Pipette up & down to ensure complete mixing and then cap tube or apply plate sealer to plate to prevent evaporation 
+Heat diluted sample at 95°C and let cool at room temperature for ~10 seconds before continuing 
+Recommended heating times at 95°C:
+Mammalian: 		5 minutes
+Viruses: 		10~15 minutes
+Bacteria / Fungi: 	15~20 minutes
+NOTE: heating for a longer period of time does not negatively affect results
+Make sure the heating device has reached the desired temperature before applying sample 
+Sample heating can be performed using a controlled heating block or thermal cycler
+PCRopsisTM Reagent RVD with RVD Enhancer					5 of 12
+
+--- SLIDE 6 ---
+06 WRITTEN PROTOCOL
+Mix heated sample and use lysed / stabilized sample in your desired RT-qPCR / PCR procedure ​
+Lysed / stabilized sample should represent 15% ~ 30% of your final RT-qPCR mixture (i.e., 3~6 μL sample into a total volume of 20 μL) 
+You might observe increasing PCR inhibition when your PCR mixture consist of >35% processed sample
+PCRopsisTM Reagent RVD with RVD Enhancer					6 of 12
+
+--- SLIDE 7 ---
+06 WRITTEN PROTOCOL
+Suggested thermocycler parameters for RT-PCR / PCR:
+
+Reverse transcription:
+45°C for 15 minutes (extend to 30 minutes if suboptimal results observed)
+95°C for 2 minutes
+
+PCR amplification (~40 cycles):
+95°C for 5 seconds
+55°C for 15 seconds
+72°C for 15 seconds
+
+Hold: 4°C
+
+ 
+NOTE: 
+When amplifying RNA, a 3-step PCR amplification set-up is recommended over a 2-step PCR amplification set-up
+The suggested cycles, temperature, and heating times mentioned above may be optimized by the user as needed
+PCRopsisTM Reagent RVD with RVD Enhancer					7 of 12
+
+--- SLIDE 8 ---
+07 STEP-BY-STEP PROTOCOL WITH FIGURES
+Step 1
+Gently invert 
+Reagent RVD with RVD Enhancer 
+to ensure homogeneity
+Step 2
+Add Reagent RVD 
+with RVD Enhancer 
+to reservoir
+Step 3
+Add 20 μL of 
+reagent to wells in a 96-well PCR plate
+PCRopsisTM Reagent RVD with RVD Enhancer					8 of 12
+
+--- SLIDE 9 ---
+Step 4
+Step 5
+Seal 96-well plate with a plate sealer to prevent evaporation
+Step 6
+Mix 20 μL of sample to wells containing 20 μL of reagent
+07 STEP-BY-STEP PROTOCOL WITH FIGURES
+Heat reagent + sample mixture at 95°C for recommended time
+Pre-heated thermal cycler or heating block before applying plate
+PCRopsisTM Reagent RVD with RVD Enhancer					9 of 12
+Recommended heating times:
+Mammalian:  5 minutes
+Viruses:         10 minutes
+Bacteria:       15 minutes
+NOTE: heating for a longer period of time does not negatively affect results
+
+--- SLIDE 10 ---
+Step 7
+Step 8
+Mix 5 μL of heated sample + reagent mixture with your RT-qPCR mix
+Step 9
+Add 15 μL RT-qPCR mix from your desired vendor to a new plate
+07 STEP-BY-STEP PROTOCOL WITH FIGURES
+Detect amplification of target genes using your desired qPCR equipment
+PCRopsisTM Reagent RVD with RVD Enhancer					10 of 12
+
+--- SLIDE 11 ---
+08 TROUBLESHOOTING & SUGGESTIONS
+Reagent RVD with RVD Enhancer is optimized for the amplification of gene targets from specimens in compatible transport mediums and may not be applicable for other applications or mediums.
+For best results, use recently collected samples in compatible transport mediums that have been stored at ~4°C since collection.
+Ensure that the processed sample consist of <30% of the total PCR mixture, since high concentrations of the processed sample may inhibit PCR for some applications. 
+Take care in maintaining the sterility of your Reagent RVD with RVD Enhancer stock after use.
+Heat Reagent RVD with RVD Enhancer / sample mixture for a few minutes longer if you observe suboptimal lysis.
+It’s recommended to use the heated Reagent RVD with Enhancer + sample mixture for downstream applications within a day, although samples may be stable for months at 4°C  or -20°C.
+09 CONTACT
+Contact our research team if assistance with Reagent RVD with RVD Enhancer is necessary (info@entopsis.com). We will try our best to assist with non-intended applications of this product or direct you to alternative products. Any business related questions should be directed to: Sales@PCRopsis.com.
+PCRopsisTM Reagent RVD with RVD Enhancer					11 of 12
+
+--- SLIDE 12 ---
+7600 NW 69th Ave, Medley, FL 33166
+www.PCRopsis.com
+
+info@entopsis.com
+sales@PCRopsis.com
+
+Toll-free	1-888-407-5070
+
+
+
+PCRopsisTM is a trademark of Entopsis
+NOT FOR RESALE
+
+v.20221208
+PCRopsisTM Reagent RVD with RVD Enhancer					12 of 12

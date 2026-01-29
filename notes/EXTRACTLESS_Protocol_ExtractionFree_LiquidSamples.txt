@@ -1,0 +1,243 @@
+SUGGESTED PROTOCOL: 
+
+Extraction-free Processing of Liquid Samples
+
+												v. 20250706
+
+Clients may need to optimize conditions for optimal results.
+
+
+
+Initial Sample:
+
+
+
+Samples that don’t need to be diluted before extraction-free processing
+
+
+
+UVT / VTM & swab samples in non-inactivating transport medium
+
+Compatible transport mediums:
+
+BD™ Universal Viral Transport System (UVT)
+
+CitoSwab® VTM
+
+MedSchenker™ Smart Transport Medium
+
+SORFA Viral Transport Medium
+
+NEST VTM
+
+Noble Biosciences CTM 
+
+Han Chang UTM
+
+Phosphate buffered saline (PBS)
+
+CDC VTM: Hank's Balanced Salt Solution (HBSS) + 2% Fetal Bovine Serum (FBS)
+
+WHO VTM: Water with veal infusion broth + BSA + antibiotics
+
+Not compatible transport mediums:
+
+Mediums containing thiocyanate or alcohols
+
+
+
+Saliva or oral rinses that do not contain thiocyanate or alcohols
+
+
+
+Dissolved solid samples (e.g., tissue, bone, food products, nail, soil, etc.)
+
+Solid samples need to be homogenized by placing the sample in sterile saline buffer, and vortexed, crushed, sonicated, forcefully stirred, or through other means that ensure the sample is dispersed in the liquid.
+
+
+
+
+
+Samples that should be diluted before extraction-free processing
+
+
+
+Liquefied dairy (e.g., milk, butter, cheese, etc.): 1 part sample – 2 parts nuclease-free water
+
+May require mild heating and vortexing to solubilize dairy samples
+
+May require the cell pellet to be washed more than once with sterile saline buffer (e.g., phosphate buffered saline)
+
+Resuspend the cell pellet using a pipette tip and not by vortexing to minimize the inclusion of fats in the resuspension. Fats will bind to the side of the tube.
+
+
+
+Waste water: 1 part sample – 2 parts nuclease-free water
+
+May require the cell pellet to be washed 1~2 times with sterile saline buffer 
+
+
+
+Culture mediums: 1 part sample – 1 parts nuclease-free water
+
+
+
+Beverages: 1 part sample – 2 parts nuclease-free water
+
+
+
+Slimy samples (e.g., snails, secretions, rotted samples, etc.): 1 part sample – 3 parts nuclease-free water
+
+May require mild heating and vortexing to solubilize slimy samples
+
+May require the cell pellet to be washed more than once with sterile saline buffer
+
+
+
+Air filter samples: air filter should be soaked in the minimum amount of sterile saline buffer required to solubilize filtered material 
+
+
+
+Plasma or Serum: 1 part sample – 2 parts nuclease-free water when analyzing low abundant bacterial cells
+
+
+
+
+
+Other samples:
+
+
+
+Samples containing red blood cells (RBC)
+
+RBC need to be lysed and the remaining cells washed to remove hemoglobin from the sample
+
+
+
+Plant material may require distinct processing
+
+
+
+Generally, spores should be induced to germinate before extraction-free processing for optimal results
+
+
+
+When analyzing viral samples, minimize sample dilution and avoid washing cell pellets
+
+Samples with both viral and cellular readout may need to be pre-processed differently to optimize results
+
+Viral samples may result in optimal results when the sample is not diluted or washed, and instead processed directly with PCRopsis™ Reagent RVD with RVD Enhancer. In this scenario, the processed, heated sample should represent 10% ~ 30% of the PCR mixture.
+
+
+
+Materials:
+
+Entopsis Inc.: 
+
+PCRopsis™ Reagent RVD with RVD Enhancer (see product IFU)
+
+PCRopsis™ Support (see product IFU)
+
+PCRopsis™ Lysis Beads (see product IFU)
+
+Test sample
+
+2 mL round-bottom tubes
+
+Thin-walled PCR tubes
+
+Heat block or thermocycler
+
+
+
+Methods:
+
+
+
+Remove debris from samples by letting the debris settle for ~10 minutes with gravity, centrifuging the sample at a low speed, or filtering the sample and only using the debris-free sample
+
+
+
+OPTIONAL: Recommended when analyzing low concentrations of bacteria, fungi, and mammalian cells OR working with samples containing high concentrations of PCR inhibitors
+
+Centrifuge 1.5~25 mL of the debris-free sample at >1,400xg for 10 minutes in a 15 mL or 50 mL conical to pellet cells
+
+Higher volumes of centrifuged sample is expected to result in improved results
+
+Remove the supernatant but do not affect the cell pellet, resuspend the cell pellet in sterile saline buffer (1~10 mL), and centrifuge at >1,400xg for 10 minutes to pellet cells
+
+More PCR inhibitors are removed when the cell pellet is washed with higher volumes of sterile saline buffer
+
+Remove the supernatant and leave <250 μL of residual sample
+
+Resuspend cell pellet using residual sample using a pipette
+
+Add roughly 0.25 grams of Lysis Beads to a 2 mL, round-bottom vial or well in a deep, 96-well plate
+
+One full PCRopsis™ Lysis Bead Scoop holds ~0.3 grams of beads
+
+Add ~200 μL of centrifuged sample to the vial or well containing Lysis Beads
+
+Cap tube or place a plate sealer on the deep well plate
+
+Vortex on high for 5~10 minutes to lyse microorganisms
+
+
+
+Add 4 μl of PCRopsis™ Support to 1 mL of PCRopsis™ Reagent RVD with RVD Enhancer. Referred to as PCRopsis™ Reagent from now on.
+
+PCRopsis™ Reagent is stable at 4°C for at least 48 hours.
+
+
+
+Mix 20 μL PCRopsis™ Reagent with 20 μL of the sample in a thin-walled tube or plate (0.2 ~ 0.6 mL) 
+
+For optimal results, the reagent needs to be added first to the tube/well before the sample is added.
+
+Ratio of sample to PCRopsis™ reagent will remain 1:1, but volume can be increased if needed (example: 30 μl : 30 μl and so forth)
+
+
+
+Pipette up & down to ensure complete mixing and then cap tube or apply plate sealer to plate to prevent evaporation
+
+
+
+Heat diluted sample at 95°C for 15~20 minutes in a thermal cycler or controlled heat block with a lid, and let cool at room temperature for ~10 seconds before continuing 
+
+Heating for a slightly longer period (extra 2~5 minutes) of time does not negatively affect results
+
+Make sure the heating device has reached the desired temperature before applying sample.
+
+You may need to increase the heating time if increasing the volume of sample and reagent past 100 μl of each
+
+Sample heating can be performed using a controlled heating block or thermal cycler; however a device lid is highly recommended to minimize popping of tube caps or unpeeling of the plate sealer 
+
+
+
+Mix heated sample and use lysed / stabilized sample in your desired downstream applications
+
+
+
+
+
+Suggested thermocycler parameters for rRT-PCR:
+
+Reverse transcription:
+
+45°C for 15 minutes
+
+95°C for 2 minutes
+
+PCR amplification (40 cycles):
+
+95°C for 5 seconds
+
+55°C for 15 seconds
+
+72°C for 15 seconds
+
+Hold: 4°C
+
+FOR RESEARCH USE ONLY. NOT FOR DIAGNOSTIC PROCEDURES.
+
+3
