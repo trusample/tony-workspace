@@ -40,11 +40,22 @@ def get_creds(credentials_path: str, token_path: str, scopes: Sequence[str]) -> 
 
     flow = InstalledAppFlow.from_client_secrets_file(str(cred_path), scopes=scopes)
 
-    # Headless/server-friendly: user opens URL in their browser and pastes the code.
-    auth_url, _ = flow.authorization_url(prompt="consent")
+    # Headless/server-friendly flow using an installed-app redirect URI.
+    # We set redirect_uri explicitly so Google doesn't reject the request.
+    try:
+        cfg = json.loads(cred_path.read_text())
+        redirect_uris = (cfg.get("installed") or {}).get("redirect_uris") or []
+        flow.redirect_uri = redirect_uris[0] if redirect_uris else "http://localhost"
+    except Exception:
+        flow.redirect_uri = "http://localhost"
+
+    auth_url, _ = flow.authorization_url(prompt="consent", access_type="offline")
     print("\nOPEN THIS URL IN YOUR BROWSER:\n")
     print(auth_url)
-    print("\nAfter approving, paste the authorization code here:\n")
+    print(
+        "\nAfter approving, your browser will redirect to localhost and likely show a connection error."
+        " That's expected. Copy the `code` parameter from the URL bar and paste it here.\n"
+    )
     code = input("code: ").strip()
     flow.fetch_token(code=code)
     creds = flow.credentials
