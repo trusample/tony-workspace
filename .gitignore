@@ -1,0 +1,22 @@
+# Large / synced data
+/drive_shared/
+/drive_sync/
+/inbox/
+/secrets/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+
+# Logs
+*.log
