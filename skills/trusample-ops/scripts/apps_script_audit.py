@@ -73,11 +73,91 @@ def main() -> int:
             "See references/google_apis_setup.md"
         )
 
-    # TODO: implement OAuth + Drive API list + Apps Script API getContent
-    # Keep deterministic: emit markdown with project list + grep hits.
-    raise SystemExit(
-        "Not implemented yet. Next step: install google-api-python-client libs and implement OAuth + API calls."
-    )
+    from googleapiclient.discovery import build
+
+    from google_auth_util import get_creds
+
+    creds = get_creds(str(cred_path), str(tok_path), SCOPES)
+
+    drive = build("drive", "v3", credentials=creds)
+    script = build("script", "v1", credentials=creds)
+
+    # Find Apps Script projects across all drives
+    q = "mimeType='application/vnd.google-apps.script' and trashed=false"
+    page_token = None
+    projects = []
+    while True:
+        resp = (
+            drive.files()
+            .list(
+                q=q,
+                fields="nextPageToken, files(id,name,driveId,owners,modifiedTime)",
+                supportsAllDrives=True,
+                includeItemsFromAllDrives=True,
+                corpora="allDrives",
+                pageSize=200,
+                pageToken=page_token,
+            )
+            .execute()
+        )
+        projects.extend(resp.get("files", []))
+        page_token = resp.get("nextPageToken")
+        if not page_token:
+            break
+
+    keywords = [k for k in args.keywords if k]
+    key_re = re.compile("|".join(re.escape(k) for k in keywords), re.IGNORECASE) if keywords else None
+
+    lines = []
+    lines.append("# EQMS Apps Script Evidence (auto)\n")
+    lines.append("This report is generated from Apps Script API project source (read-only).\n")
+    lines.append(f"Projects found: **{len(projects)}**\n")
+
+    for p in sorted(projects, key=lambda x: (x.get("name") or "", x.get("id") or "")):
+        pid = p["id"]
+        name = p.get("name", "(no name)")
+        drive_id = p.get("driveId")
+        lines.append(f"\n## {name}\n")
+        lines.append(f"- projectId: `{pid}`\n")
+        if drive_id:
+            lines.append(f"- driveId: `{drive_id}`\n")
+        lines.append(f"- modifiedTime: `{p.get('modifiedTime')}`\n")
+
+        try:
+            content = script.projects().getContent(scriptId=pid).execute()
+        except Exception as e:
+            lines.append(f"- ERROR fetching content: `{e}`\n")
+            continue
+
+        files = content.get("files", [])
+        hits = []
+        for f in files:
+            fname = f.get("name", "(unnamed)")
+            src = f.get("source", "") or ""
+            if not src or not key_re:
+                continue
+            for m in key_re.finditer(src):
+                # grab a short surrounding snippet
+                start = max(m.start() - 60, 0)
+                end = min(m.end() + 60, len(src))
+                snippet = src[start:end].replace("\n", " ")
+                hits.append((fname, m.group(0), snippet))
+
+        if not hits:
+            lines.append("- keyword hits: *(none)*\n")
+        else:
+            lines.append(f"- keyword hits: **{len(hits)}**\n")
+            lines.append("\n| file | match | snippet |\n|---|---|---|\n")
+            for fname, match, snippet in hits[:80]:
+                safe = snippet.replace("|", "\\|")
+                lines.append(f"| `{fname}` | `{match}` | {safe} |\n")
+            if len(hits) > 80:
+                lines.append(f"\n*(truncated; {len(hits)} total hits)*\n")
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text("".join(lines), encoding="utf-8")
+    print(f"Wrote: {out_path}")
+    return 0
 
 
 if __name__ == "__main__":
