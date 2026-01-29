@@ -25,6 +25,7 @@ SCOPE_MAP = {
     "sheets": "https://www.googleapis.com/auth/spreadsheets.readonly",
     "script": "https://www.googleapis.com/auth/script.projects.readonly",
     "gmail": "https://www.googleapis.com/auth/gmail.readonly",
+    "gmail_modify": "https://www.googleapis.com/auth/gmail.modify",
     "calendar": "https://www.googleapis.com/auth/calendar.readonly",
 }
 
