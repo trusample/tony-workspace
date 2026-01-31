@@ -135,10 +135,12 @@ def main() -> int:
     max_week = float(cfg.get("max_buy_usd_per_week", 14.0))
     ma_days = int(cfg.get("trend_ma_days", 200))
 
-    candles = fetch_daily_candles(product_id, days=max(260, ma_days + 5))
+    # If ma_days <= 0, treat trend filter as disabled (always OK).
+    days_needed = 260 if ma_days <= 0 else max(260, ma_days + 5)
+    candles = fetch_daily_candles(product_id, days=days_needed)
     closes = [c.close for c in candles]
     last_close = closes[-1]
-    ma = moving_average(closes, ma_days)
+    ma = None if ma_days <= 0 else moving_average(closes, ma_days)
 
     now = datetime.now(timezone.utc)
 
@@ -151,20 +153,21 @@ def main() -> int:
         ws["spent_usd"] = 0.0
     spent_week = float(ws.get("spent_usd", 0.0))
 
+    trend_ok = True if ma_days <= 0 else bool(ma is not None and last_close > ma)
     decision = {
         "ts": iso_now(),
         "product_id": product_id,
         "last_close": last_close,
         "ma_days": ma_days,
         "ma": ma,
-        "trend_ok": bool(ma is not None and last_close > ma),
+        "trend_ok": trend_ok,
         "mode": cfg.get("mode", "paper"),
         "buy_usd_requested": buy_usd,
         "buy_usd_executed": 0.0,
         "reason": "",
     }
 
-    if ma is None:
+    if ma_days > 0 and ma is None:
         decision["reason"] = "insufficient candle history for MA"
         log_event(decision)
         state["last_run"] = decision["ts"]
