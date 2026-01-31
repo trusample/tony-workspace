@@ -20,9 +20,12 @@ Use this skill to produce **drafts and workflows** for TruSample sales + operati
 
 ## Scripts
 - `scripts/quote_draft.py` — Generate quote email + questions + internal summary
-- `scripts/outreach_draft.py` — Distributor outreach (email + LinkedIn + X DM)
 - `scripts/followup_plan.py` — Follow-up schedule + message templates
+- `scripts/outreach_draft.py` — Distributor outreach (email + LinkedIn + X DM)
+- `scripts/invoice_request_draft.py` — Invoice/payment details email template
 - `scripts/coa_request.py` — COA/spec request email template
+- `scripts/product_spec_sheet.py` — One-page product/spec sheet (text)
+- `scripts/meeting_brief.py` — Pre-call agenda + discovery + next steps
 
 Run scripts with `python3` and paste the output back to the user.
 
