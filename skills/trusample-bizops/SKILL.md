@@ -35,6 +35,8 @@ Use this skill to produce **drafts and workflows** for TruSample sales + operati
 - `scripts/proposal_to_email.py` — Proposal markdown → sendable email (subject + body)
 - `scripts/followup_autopack.py` — Follow-up pack tailored to an opportunity (cadence + objection variants)
 - `scripts/quote_pack.py` — One-command quote pack (extract → proposal → sendable email → follow-ups)
+- `scripts/quote_pack_save.py` — Quote pack + save outputs to timestamped folder (spec/proposal/email/followups)
+- `scripts/pricing_guardrails.py` — Consistent commercial language blocks (terms/validity/MOQ/shipping)
 - `scripts/objection_handling_snippets.py` — Reusable responses for common objections
 
 Run scripts with `python3` and paste the output back to the user.

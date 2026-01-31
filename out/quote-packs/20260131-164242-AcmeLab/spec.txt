@@ -1,0 +1,14 @@
+STRUCTURED SPEC (best-effort)
+- matrix: Synthetic CSF
+- analytes: Aβ42
+- concentrations: 100 pg/mL
+- volume: 10 mL
+- units: 20
+- ship_to: 33101
+- timeline: 2 weeks
+- storage: (missing)
+- format: vials
+- documentation: COA
+
+MISSING INFO
+- (none detected)

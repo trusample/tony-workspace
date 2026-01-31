@@ -1,0 +1,28 @@
+SUBJECT:
+Quote — Synthetic CSF (Acme Lab)
+
+BODY:
+Hi there,
+
+Attached is our quote/proposal for Synthetic CSF.
+
+Summary
+- Matrix: Synthetic CSF
+- Targets/analytes: Aβ42
+- Target concentrations: 100 pg/mL
+- Fill volume per unit: 10 mL
+- Quantity: 20
+
+Commercials
+- Total: $1,250
+- Lead time / delivery window: 2 weeks
+- Ship-to: 33101
+
+To proceed, please confirm:
+1) Billing contact + billing address
+2) Invoice delivery (PDF vs link)
+3) PO number (if applicable)
+
+Best,
+TruSample
+info@trusample.bio
