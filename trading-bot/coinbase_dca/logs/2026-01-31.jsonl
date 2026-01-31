@@ -1,0 +1,2 @@
+{"buy_usd_executed": 0.0, "buy_usd_requested": 2.0, "last_close": 79178.89, "ma": 104154.30605, "ma_days": 200, "mode": "paper", "product_id": "BTC-USD", "reason": "trend filter off (price <= MA)", "trend_ok": false, "ts": "2026-01-31T17:11:18.771566+00:00"}
+{"buy_usd_executed": 0.0, "buy_usd_requested": 2.0, "last_close": 79169.39, "ma": 104154.25855, "ma_days": 200, "mode": "paper", "product_id": "BTC-USD", "reason": "trend filter off (price <= MA)", "trend_ok": false, "ts": "2026-01-31T17:11:23.953580+00:00"}

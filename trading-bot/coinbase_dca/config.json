@@ -1,0 +1,11 @@
+{
+  "product_id": "BTC-USD",
+  "mode": "paper",
+  "buy_usd": 2.0,
+  "max_buy_usd_per_day": 2.0,
+  "max_buy_usd_per_week": 14.0,
+  "trend_ma_days": 200,
+  "timezone": "America/New_York",
+  "run_time_local": "09:05",
+  "notes": "Phase 1: paper DCA + trend filter"
+}
