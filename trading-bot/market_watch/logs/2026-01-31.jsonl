@@ -1,0 +1,1 @@
+{"products": {"BTC-USD": {"chg24_pct": -6.2754, "last_close": 78832.7, "ma": 104152.5751, "ma_days": 200, "prev_close": 84110.99, "trend_ok": false}, "ETH-USD": {"chg24_pct": -10.7704, "last_close": 2411.6, "ma": 3665.85135, "ma_days": 200, "prev_close": 2702.69, "trend_ok": false}}, "source": "coinbase-public", "ts": "2026-01-31T17:22:21.560508+00:00"}

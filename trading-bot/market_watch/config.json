@@ -1,0 +1,6 @@
+{
+  "products": ["BTC-USD", "ETH-USD"],
+  "granularity_seconds": 3600,
+  "ma_days": 200,
+  "log_timezone": "America/New_York"
+}
