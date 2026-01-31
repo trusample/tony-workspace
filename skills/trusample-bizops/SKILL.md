@@ -32,6 +32,8 @@ Use this skill to produce **drafts and workflows** for TruSample sales + operati
 - `scripts/meeting_brief.py` — Pre-call agenda + discovery + next steps
 - `scripts/price_list_template.py` — Price list template (text or CSV)
 - `scripts/quote_to_invoice_handoff.py` — Quote summary → invoice email + fulfillment checklist
+- `scripts/proposal_to_email.py` — Proposal markdown → sendable email (subject + body)
+- `scripts/followup_autopack.py` — Follow-up pack tailored to an opportunity (cadence + objection variants)
 - `scripts/objection_handling_snippets.py` — Reusable responses for common objections
 
 Run scripts with `python3` and paste the output back to the user.
