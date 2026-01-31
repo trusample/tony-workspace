@@ -19,7 +19,10 @@ Use this skill to produce **drafts and workflows** for TruSample sales + operati
 - Prefer **B2B tone** (procurement-friendly, compliant).
 
 ## Scripts
+- `scripts/customer_intake_summary.py` — Messy inbound email/thread → opportunity card + next actions + short reply
+- `scripts/crm_opportunity_card.py` — CRM-ready opportunity card (JSON + human summary)
 - `scripts/quote_extractor.py` — Messy inbound email/text → structured quote spec + missing info + reply draft
+- `scripts/proposal_generator.py` — 1–2 page proposal/quote draft (Markdown)
 - `scripts/quote_draft.py` — Generate quote email + questions + internal summary
 - `scripts/followup_plan.py` — Follow-up schedule + message templates
 - `scripts/outreach_draft.py` — Distributor outreach (email + LinkedIn + X DM)
