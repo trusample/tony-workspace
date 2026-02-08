@@ -1,6 +1,7 @@
 ---
 name: kimi
 description: Integration with Kimi Moderato (Moonshot AI) API for CRM, email, and website automation. Use when needing to call Kimi AI endpoints for leads, campaigns, and page updates.
+model: gpt-3.5-turbo
 ---
 
 # Kimi API Integration
