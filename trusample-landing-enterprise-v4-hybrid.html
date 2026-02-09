@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TruSample — ISO 13485 Certified Synthetic Reference Materials</title>
+  <meta name="description" content="ISO 13485 certified synthetic matrices (CSF, urine, and more) engineered for assay validation, proficiency testing, and method development." />
+  <style>
+    :root{
+      /* LIGHT base */
+      --ink:#0b1220;
+      --ink2:#22304a;
+      --muted:#5a6a87;
+      --bg:#ffffff;
+      --soft:#f4f7fb;
+      --soft2:#eef4f7;
+      --border:rgba(11,18,32,.10);
+
+      /* DARK band */
+      --night:#07111a;
+      --night2:#0b1724;
+      --nightText:#eef3ff;
+      --nightMuted:#a7b6cf;
+      --nightBorder:rgba(255,255,255,.10);
+
+      /* Brand */
+      --brand:#7b1436;
+      --brand2:#b93a61;
+      --sage:#b5cfbd;
+      --sage2:#7e9773;
+      --blue:#1a7ac4;
+      --blue2:#59b7ff;
+
+      --r:18px;
+      --r2:22px;
+      --shadow: 0 22px 60px rgba(10,20,40,.10);
+      --shadow2: 0 12px 30px rgba(10,20,40,.08);
+      --shadowDark: 0 22px 70px rgba(0,0,0,.42);
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      color:var(--ink);
+      background:
+        radial-gradient(1100px 620px at 10% -10%, rgba(26,122,196,.12), transparent 55%),
+        radial-gradient(900px 560px at 95% -5%, rgba(181,207,189,.18), transparent 60%),
+        radial-gradient(700px 520px at 70% 15%, rgba(123,20,54,.10), transparent 60%),
+        var(--bg);
+    }
+
+    a{color:inherit}
+    .container{max-width:1140px;margin:0 auto;padding:22px}
+
+    /* Nav */
+    .top{
+      position:sticky;top:0;z-index:20;
+      background:rgba(255,255,255,.72);
+      backdrop-filter: blur(10px) saturate(140%);
+      border-bottom:1px solid rgba(11,18,32,.08);
+    }
+    .navRow{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brandRow{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.2px}
+    .mark{
+      width:34px;height:34px;border-radius:12px;
+      background:linear-gradient(135deg,var(--brand2),var(--brand));
+      box-shadow: 0 14px 34px rgba(123,20,54,.16);
+      border:1px solid rgba(123,20,54,.18);
+    }
+    .nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .pill{padding:8px 12px;border-radius:999px;border:1px solid rgba(11,18,32,.10);text-decoration:none;color:var(--muted);background:rgba(255,255,255,.75)}
+
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;text-decoration:none;font-weight:900;border:1px solid rgba(11,18,32,.10)}
+    .btn.primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#07101c;box-shadow:0 16px 38px rgba(26,122,196,.18)}
+    .btn.ghost{background:rgba(255,255,255,.8);color:var(--ink)}
+
+    /* Type */
+    h1{margin:0 0 12px;font-size:48px;line-height:1.03;letter-spacing:-.025em}
+    h2{margin:0 0 10px;font-size:28px;letter-spacing:-.01em}
+    h3{margin:0 0 8px;font-size:18px}
+    p{margin:0}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns: 1.12fr .88fr; gap:16px; padding:30px 0 6px}
+    .sub{color:var(--muted);font-size:18px;line-height:1.65;max-width:70ch}
+    .heroCtas{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 10px}
+    .trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .chip{font-size:12px;color:var(--ink2);border:1px solid rgba(11,18,32,.10);background:rgba(255,255,255,.76);padding:8px 10px;border-radius:999px}
+
+    /* Decorative hero art */
+    .art{
+      border-radius:var(--r2);
+      border:1px solid rgba(11,18,32,.10);
+      box-shadow: var(--shadow);
+      background:
+        radial-gradient(500px 280px at 20% 18%, rgba(26,122,196,.18), transparent 65%),
+        radial-gradient(520px 320px at 85% 25%, rgba(181,207,189,.30), transparent 60%),
+        radial-gradient(520px 340px at 55% 85%, rgba(123,20,54,.14), transparent 62%),
+        linear-gradient(180deg, rgba(255,255,255,.92), rgba(244,247,251,.92));
+      padding:18px;
+      position:relative;
+      overflow:hidden;
+      min-height: 280px;
+    }
+    .art:before{
+      content:"";
+      position:absolute;inset:-120px;
+      background:
+        radial-gradient(circle at 30% 35%, rgba(26,122,196,.12), transparent 55%),
+        radial-gradient(circle at 70% 55%, rgba(123,20,54,.10), transparent 55%),
+        radial-gradient(circle at 60% 20%, rgba(181,207,189,.22), transparent 50%);
+      filter: blur(18px);
+      transform: rotate(6deg);
+      opacity:.9;
+    }
+    .artInner{position:relative;z-index:1}
+
+    .kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+    .kpi{border:1px solid rgba(11,18,32,.10);background:rgba(255,255,255,.78);border-radius:16px;padding:12px;box-shadow:var(--shadow2)}
+    .kpi b{display:block}
+    .kpi span{color:var(--muted);font-size:12px;line-height:1.35;display:block;margin-top:4px}
+
+    /* Sections */
+    .section{margin:30px 0}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .card{background:rgba(255,255,255,.85);border:1px solid rgba(11,18,32,.10);border-radius:var(--r);padding:16px;box-shadow:var(--shadow2)}
+    .card p{color:var(--muted);line-height:1.65}
+
+    .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .tile{background:rgba(255,255,255,.85);border:1px solid rgba(11,18,32,.10);border-radius:18px;padding:14px;min-height:118px;box-shadow:var(--shadow2)}
+    .tile p{color:var(--muted);line-height:1.55}
+    .tile a{display:inline-block;margin-top:10px;color:var(--brand);font-weight:900;text-decoration:none}
+    .tile a:hover{text-decoration:underline}
+
+    .icon{width:22px;height:22px;opacity:.95}
+    .tag{display:inline-block;font-size:12px;color:var(--ink2);border:1px solid rgba(11,18,32,.12);padding:4px 8px;border-radius:999px;background:rgba(244,247,251,.95)}
+    ul{margin:10px 0 0 18px;color:var(--muted);line-height:1.7}
+
+    /* Soft band */
+    .band{background:linear-gradient(180deg, rgba(244,247,251,.92), rgba(238,244,247,.92)); border-top:1px solid rgba(11,18,32,.06); border-bottom:1px solid rgba(11,18,32,.06)}
+
+    /* DARK section band (Quality) */
+    .darkBand{
+      background:
+        radial-gradient(900px 520px at 15% 10%, rgba(26,122,196,.24), transparent 60%),
+        radial-gradient(780px 520px at 90% 0%, rgba(181,207,189,.18), transparent 60%),
+        radial-gradient(820px 640px at 70% 120%, rgba(123,20,54,.24), transparent 60%),
+        linear-gradient(180deg, var(--night), var(--night2));
+      color:var(--nightText);
+      border-top:1px solid rgba(255,255,255,.08);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .darkBand h2,.darkBand h3{color:var(--nightText)}
+    .darkBand p{color:rgba(167,182,207,.95)}
+    .darkCard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadowDark)}
+    .darkBand ul{color:rgba(167,182,207,.95)}
+    .darkTag{color:rgba(238,243,255,.9);border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.18)}
+
+    /* FINAL CTA band */
+    .ctaBand{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:16px;border-radius:22px;border:1px solid rgba(11,18,32,.10);
+      background:linear-gradient(135deg, rgba(26,122,196,.14), rgba(181,207,189,.18));
+      box-shadow: var(--shadow2);
+    }
+    .ctaBand.final{
+      background:
+        radial-gradient(600px 260px at 20% 30%, rgba(26,122,196,.18), transparent 60%),
+        radial-gradient(600px 260px at 80% 30%, rgba(123,20,54,.14), transparent 60%),
+        linear-gradient(135deg, rgba(244,247,251,.96), rgba(238,244,247,.96));
+    }
+
+    .footer{margin:34px 0 18px;color:rgba(90,106,135,.95);font-size:12px}
+
+    @media (max-width: 1060px){
+      .hero{grid-template-columns:1fr}
+      .tiles{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width: 760px){
+      .grid3{grid-template-columns:1fr}
+      .grid2{grid-template-columns:1fr}
+      .tiles{grid-template-columns:1fr}
+      h1{font-size:36px}
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="container">
+      <div class="navRow">
+        <div class="brandRow"><span class="mark" aria-hidden="true"></span> TruSample</div>
+        <div class="nav">
+          <a class="pill" href="#solutions">Solutions</a>
+          <a class="pill" href="#materials">Materials</a>
+          <a class="pill" href="#quality">Quality</a>
+          <a class="pill" href="#resources">Resources</a>
+          <a class="btn primary" href="#quote">Request a quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- HERO -->
+    <div class="hero">
+      <div>
+        <h1>ISO 13485 certified synthetic matrices for assay validation and proficiency testing.</h1>
+        <p class="sub">TruSample engineers consistent, study-ready reference materials (CSF, urine, and more) with documentation built for regulated and audit-sensitive workflows—so teams can validate faster with fewer confounders and stronger traceability.</p>
+        <div class="heroCtas">
+          <a class="btn primary" href="#quote">Get pricing + lead times</a>
+          <a class="btn ghost" href="#materials">View materials</a>
+          <a class="btn ghost" href="#quality">Documentation</a>
+        </div>
+        <div class="trust">
+          <span class="chip">ISO 13485 certified</span>
+          <span class="chip">Lot traceability</span>
+          <span class="chip">COA / spec sheets</span>
+          <span class="chip">Custom spike-ins</span>
+          <span class="chip">Distributor-ready</span>
+        </div>
+      </div>
+
+      <div class="art" aria-label="Decorative illustration panel">
+        <div class="artInner">
+          <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">
+            <div>
+              <h3 style="margin:0 0 6px">Enterprise-ready supply</h3>
+              <p style="color:var(--muted);line-height:1.55">A clean procurement experience for evaluation and repeat orders—built for science teams and purchasing teams.</p>
+            </div>
+            <span class="tag">B2B</span>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>Consistency</b><span>Reduce lot-to-lot variability</span></div>
+            <div class="kpi"><b>Speed</b><span>Shorten validation timelines</span></div>
+            <div class="kpi"><b>Control</b><span>Matrix tuned to your targets</span></div>
+            <div class="kpi"><b>Support</b><span>Scientist-to-scientist guidance</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHOOSE YOUR PATH -->
+    <div id="solutions" class="section">
+      <h2>Choose your path</h2>
+      <div class="tiles">
+        <div class="tile">
+          <div style="display:flex;gap:10px;align-items:center">
+            <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M7 3h10v4H7V3Z" stroke="rgba(11,18,32,.9)"/><path d="M6 7h12l-1 14H7L6 7Z" stroke="rgba(11,18,32,.9)"/></svg>
+            <b>Synthetic biofluids</b>
+          </div>
+          <p>Urine, CSF, and additional matrices built for reproducible experiments.</p>
+          <a href="#materials">Browse matrices →</a>
+        </div>
+        <div class="tile">
+          <div style="display:flex;gap:10px;align-items:center">
+            <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 18V6m0 12h16M8 14l3-3 2 2 5-6" stroke="rgba(11,18,32,.9)" stroke-width="1.6"/></svg>
+            <b>Assay validation</b>
+          </div>
+          <p>Precision, linearity, LoD/LoQ, and interference studies with controlled background.</p>
+          <a href="#how">See workflow →</a>
+        </div>
+        <div class="tile">
+          <div style="display:flex;gap:10px;align-items:center">
+            <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M8 7h8M8 12h8M8 17h5" stroke="rgba(11,18,32,.9)" stroke-width="1.6"/><path d="M6 3h12v18H6V3Z" stroke="rgba(11,18,32,.9)"/></svg>
+            <b>Documentation</b>
+          </div>
+          <p>COA/spec options, lot traceability, and labeling designed for audit-sensitive work.</p>
+          <a href="#quality">Quality system →</a>
+        </div>
+        <div class="tile">
+          <div style="display:flex;gap:10px;align-items:center">
+            <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4Z" stroke="rgba(11,18,32,.9)"/><path d="M9 12l2 2 4-5" stroke="rgba(11,18,32,.9)" stroke-width="1.6"/></svg>
+            <b>OEM / Custom</b>
+          </div>
+          <p>Custom formulations and packaging programs for partners and distributors.</p>
+          <a href="#quote">Start a quote →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY -->
+    <div class="section">
+      <h2>Why teams switch to TruSample</h2>
+      <div class="grid3">
+        <div class="card"><h3>Cut rework</h3><p>Controlled matrix reduces confounders so your validation data is cleaner and more repeatable across lots.</p></div>
+        <div class="card"><h3>Keep timelines</h3><p>Stable supply helps you plan studies without donor scarcity and last‑minute substitutions.</p></div>
+        <div class="card"><h3>Strengthen traceability</h3><p>Lot IDs and documentation support audit‑sensitive workflows and multi-site collaboration.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="container">
+      <!-- MATERIALS -->
+      <div id="materials" class="section" style="margin:26px 0">
+        <h2>Materials (examples)</h2>
+        <div class="grid2">
+          <div class="card">
+            <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start">
+              <div>
+                <span class="tag">Matrix</span>
+                <h3 style="margin-top:10px">Synthetic Urine</h3>
+                <p>Baseline matrix for spiking analytes and running repeatable validation studies.</p>
+                <ul>
+                  <li>Custom concentrations and targets</li>
+                  <li>Packaging options to match your SOP</li>
+                  <li>Documentation package per SKU</li>
+                </ul>
+              </div>
+              <a class="btn ghost" style="padding:8px 10px" href="#quote">Request quote</a>
+            </div>
+          </div>
+          <div class="card">
+            <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start">
+              <div>
+                <span class="tag">Matrix</span>
+                <h3 style="margin-top:10px">Synthetic CSF</h3>
+                <p>Engineered CSF-like matrix for method development, verification, and PT-style challenges.</p>
+                <ul>
+                  <li>Lot continuity for longitudinal studies</li>
+                  <li>Tailored analytes + concentrations</li>
+                  <li>Study-ready labeling</li>
+                </ul>
+              </div>
+              <a class="btn ghost" style="padding:8px 10px" href="#quote">Request quote</a>
+            </div>
+          </div>
+        </div>
+        <div class="ctaBand" style="margin-top:14px">
+          <div>
+            <b>Need a different matrix?</b>
+            <div style="color:var(--muted);margin-top:4px">Tell us your workflow and targets—TruSample can develop custom formulations for R&D, validation, and distribution programs.</div>
+          </div>
+          <a class="btn primary" href="#quote">Talk to a scientist</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUALITY (DARK BAND) -->
+  <div id="quality" class="darkBand">
+    <div class="container">
+      <div class="section" style="margin:30px 0">
+        <h2>Quality + documentation</h2>
+        <div class="grid2">
+          <div class="card darkCard">
+            <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start">
+              <div>
+                <span class="tag darkTag">ISO</span>
+                <h3 style="margin-top:10px">ISO 13485 certified</h3>
+                <p>TruSample supports enterprise customers with controlled processes, traceability, and documentation packages appropriate to each product and use case.</p>
+                <ul>
+                  <li>Lot traceability + consistent labeling</li>
+                  <li>COA / spec sheets (per SKU)</li>
+                  <li>Packaging options to support your SOP</li>
+                </ul>
+              </div>
+              <a class="btn ghost" style="padding:8px 10px;border-color:rgba(255,255,255,.16);background:rgba(255,255,255,.08);color:var(--nightText)" href="#quote">Request docs</a>
+            </div>
+          </div>
+          <div class="card darkCard">
+            <span class="tag darkTag">Publish this</span>
+            <h3 style="margin-top:10px">Procurement-ready trust signals</h3>
+            <p>These additions move you from “nice site” to “safe vendor” for enterprise procurement.</p>
+            <ul>
+              <li>ISO certificate scope + certificate number</li>
+              <li>Example redacted COA for a flagship SKU</li>
+              <li>MOQ + lead time guidance for B2B buyers</li>
+              <li>Distributor program overview</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- HOW -->
+    <div id="how" class="section">
+      <h2>How it works</h2>
+      <div class="grid3">
+        <div class="card"><h3>1) Define your spec</h3><p>Matrix, targets/analytes, concentrations, volume, and storage constraints.</p></div>
+        <div class="card"><h3>2) Quote + timeline</h3><p>We confirm MOQ, pricing tiers, lead times, and documentation package.</p></div>
+        <div class="card"><h3>3) Receive study-ready lots</h3><p>Clear lot IDs, labeling, and documentation for quick SOP integration.</p></div>
+      </div>
+    </div>
+
+    <!-- RESOURCES -->
+    <div id="resources" class="section">
+      <h2>Resources</h2>
+      <div class="grid3">
+        <div class="card"><h3>Matrix selection guide</h3><p>Help buyers pick the right synthetic matrix for validation and PT workflows.</p></div>
+        <div class="card"><h3>COA / documentation overview</h3><p>What documentation to expect for regulated workflows (COA, spec, traceability).</p></div>
+        <div class="card"><h3>Custom formulation intake</h3><p>Collect targets, concentration, volume, and storage constraints for fast quoting.</p></div>
+      </div>
+    </div>
+
+    <!-- QUOTE (FINAL CTA BAND) -->
+    <div id="quote" class="section">
+      <h2>Request a quote</h2>
+      <div class="card">
+        <p style="color:var(--muted)">Send these 5 details and we’ll respond fast:</p>
+        <ul>
+          <li>Matrix (urine, CSF, etc.)</li>
+          <li>Targets/analytes + concentrations</li>
+          <li>Volume per unit</li>
+          <li>Number of units / total volume</li>
+          <li>Ship-to country + timeline</li>
+        </ul>
+        <div class="ctaBand final" style="margin-top:12px">
+          <div>
+            <b>Email:</b> info@trusample.bio
+            <div style="color:var(--muted);margin-top:4px">Optional: include PO requirements and whether you need distributor terms.</div>
+          </div>
+          <a class="btn primary" href="#materials">View materials</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">© TruSample — Enterprise landing concept (v4 hybrid). Dark band: Quality/ISO. Final CTA: premium band with art. Next: swap placeholders for exact SKU list + add ISO certificate details and sample COA.</div>
+  </div>
+</body>
+</html>

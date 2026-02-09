@@ -1,6 +1,6 @@
 # EQMS Master Sheets Map (auto)
 
-Candidates found: **6**
+Candidates found: **5**
 
 ## GET IDs SHEET
 - fileId: `17Ocrdq6OU_bTDQKTKQvfQaaLaodBbETUt7V05WQh1yU`
@@ -20,16 +20,10 @@ Candidates found: **6**
 - modifiedTime: `2025-12-22T04:44:47.795Z`
 - tabs (1): `MASTER_ROADMAP`
 
-## QMS-002 – Master Document Index
-- fileId: `1GFwEAY2peRQtg392udOa_J2caiEA0BGnAgt28xcCWYc`
-- link: https://docs.google.com/spreadsheets/d/1GFwEAY2peRQtg392udOa_J2caiEA0BGnAgt28xcCWYc/edit?usp=drivesdk
-- modifiedTime: `2025-12-18T11:05:38.926Z`
-- tabs (1): `Master Index`
-
 ## TruSample eQMS MASTER
 - fileId: `1XqMvZjw_5pFEJJXq9SyK6kYQhTzA2IxCz0kc8kOWlQg`
 - link: https://docs.google.com/spreadsheets/d/1XqMvZjw_5pFEJJXq9SyK6kYQhTzA2IxCz0kc8kOWlQg/edit?usp=drivesdk
-- modifiedTime: `2026-01-21T05:01:56.376Z`
+- modifiedTime: `2026-01-29T18:10:35.737Z`
 - tabs (33): `HOME_DASHBOARD`, `EQMS_RECORD_INDEX`, `GOVERNANCE_REGISTER`, `EQMS_INDEX`, `SYSTEMS_CONFIG`, `SOP_INDEX`, `FORMS_INDEX`, `FOLDERS_CONFIG`, `PARENT_DIAG`, `TS_SER_FOLDER_VERIFY`, `INTERNAL_AUDIT_LOG`, `CAPA_LOG`, `HANDOFF_CHECKPOINTS`, `INGEST_QUEUE`, `INGEST_LOG`, `MGMT_REVIEW_REGISTER`, `MGMT_REVIEW_ACTIONS`, `CHANGE_CONTROL_LOG`, `CHANGE_CONTROL_LOG__SNAPSHOT_20251221`, `GOVERNANCE_RECORDS`, `RISK_REGISTER`, `ACCESS_REGISTER`, `RELEASE_REGISTER`, `AUDIT_DASHBOARD`, `CAPA_LINKS`, `NCR_LINKS`, `NCR_Log`, `COMPLAINT_LINKS`, `TRAINING_LINKS`, `DOCUMENT_INDEX`, `_PING`, `GOVERNANCE_LOG`, `CHANGE_LOG`
 
 ## TruSample_eQMS_Master_Implementation_Tracker

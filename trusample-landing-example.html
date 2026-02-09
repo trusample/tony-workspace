@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TruSample — Synthetic reference materials for labs</title>
+  <style>
+    :root{
+      --bg:#0b1020; --card:#111a33; --muted:#9fb0d0; --text:#eef3ff;
+      --accent:#5df0a5; --accent2:#6aa6ff; --warn:#ffcc66;
+      --border:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:radial-gradient(1200px 700px at 10% 0%, rgba(106,166,255,.18), transparent 55%), radial-gradient(1200px 700px at 90% 10%, rgba(93,240,165,.14), transparent 60%), var(--bg); color:var(--text);}
+    a{color:inherit}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent2),var(--accent));box-shadow:0 10px 30px rgba(93,240,165,.18)}
+    .navlinks{display:flex;gap:16px;align-items:center}
+    .pill{border:1px solid var(--border);padding:8px 12px;border-radius:999px;color:var(--muted);text-decoration:none}
+    .btn{background:linear-gradient(135deg,var(--accent2),var(--accent)); color:#071021; font-weight:700; padding:10px 14px; border-radius:12px; text-decoration:none; display:inline-block}
+
+    .hero{display:grid;grid-template-columns: 1.2fr .8fr; gap:28px; align-items:start; padding:36px 0 10px}
+    h1{font-size:44px;line-height:1.05;margin:0 0 14px}
+    .sub{color:var(--muted);font-size:18px;line-height:1.5;margin:0 0 18px}
+    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:18px 0 10px}
+    .secondary{border:1px solid var(--border);background:rgba(255,255,255,.04);padding:10px 14px;border-radius:12px;text-decoration:none;color:var(--text)}
+    .micro{color:var(--muted);font-size:13px;line-height:1.5}
+
+    .panel{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:18px;padding:18px}
+    .kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .kpi{background:rgba(0,0,0,.20);border:1px solid var(--border);border-radius:14px;padding:12px}
+    .kpi b{display:block;font-size:18px}
+    .kpi span{color:var(--muted);font-size:12px}
+
+    .strip{display:flex;gap:10px;flex-wrap:wrap; margin:18px 0 0}
+    .badge{border:1px solid var(--border);border-radius:999px;padding:8px 10px;color:var(--muted);font-size:12px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0}
+    .card{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:18px;padding:16px}
+    .card h3{margin:0 0 8px}
+    .card p{margin:0;color:var(--muted);line-height:1.55}
+
+    .section{margin:26px 0}
+    .section h2{margin:0 0 10px;font-size:26px}
+
+    .two{display:grid;grid-template-columns: 1fr 1fr; gap:14px}
+    ul{margin:10px 0 0 18px;color:var(--muted);line-height:1.65}
+
+    .product{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+    .tag{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:4px 8px;color:var(--muted);font-size:12px}
+    .price{color:var(--warn);font-weight:700}
+
+    .footer{margin:40px 0 20px;color:var(--muted);font-size:12px}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .two{grid-template-columns:1fr}
+      h1{font-size:36px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand"><div class="logo"></div> TruSample</div>
+      <div class="navlinks">
+        <a class="pill" href="#products">Products</a>
+        <a class="pill" href="#how">How it works</a>
+        <a class="pill" href="#qa">Quality</a>
+        <a class="btn" href="#quote">Request a quote</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div>
+        <h1>Reference materials you can trust.
+          <span style="display:block; font-weight:650; color:var(--muted); font-size:22px; line-height:1.25; margin-top:10px">Synthetic matrices (CSF, urine, and more) engineered for validation, proficiency testing, and method development.</span>
+        </h1>
+        <p class="sub">TruSample makes consistent, study-ready materials so labs and IVD teams can build, validate, and monitor assays without donor scarcity, biosafety complexity, or lot-to-lot surprises.</p>
+        <div class="ctaRow">
+          <a class="btn" href="#quote">Get pricing + lead times</a>
+          <a class="secondary" href="#products">Browse products</a>
+          <span class="micro">Need something custom? We’ll match your target analytes + concentrations.</span>
+        </div>
+        <div class="strip">
+          <span class="badge">Lot-to-lot consistency</span>
+          <span class="badge">Custom spike-ins</span>
+          <span class="badge">Documentation packages (COA/spec)</span>
+          <span class="badge">Regulated-workflow friendly</span>
+          <span class="badge">Distributor-ready</span>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3 style="margin:0 0 10px">Fast path to a validated workflow</h3>
+        <div class="kpis">
+          <div class="kpi"><b>Stable supply</b><span>Plan studies without donor scarcity</span></div>
+          <div class="kpi"><b>Controlled matrix</b><span>Reduce confounders + rework</span></div>
+          <div class="kpi"><b>Targeted analytes</b><span>Spike-ins to your spec</span></div>
+          <div class="kpi"><b>Support</b><span>We’ll help you choose the right material</span></div>
+        </div>
+        <p class="micro" style="margin-top:12px">Note: This example page is a draft layout + copy. Replace claims with verified specs/COAs for each SKU.</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>For assay validation</h3>
+        <p>Run precision, linearity, LoD/LoQ, and interference studies with predictable background and repeatable performance.</p>
+      </div>
+      <div class="card">
+        <h3>For proficiency testing</h3>
+        <p>Design PT-style challenges with controlled targets and consistent distribution across sites.</p>
+      </div>
+      <div class="card">
+        <h3>For method development</h3>
+        <p>Iterate quickly with formulations tuned to your workflow—then scale when you’re ready.</p>
+      </div>
+    </div>
+
+    <div id="products" class="section">
+      <h2>Popular materials</h2>
+      <div class="two">
+        <div class="card">
+          <div class="product">
+            <div>
+              <div class="tag">Matrix</div>
+              <h3 style="margin:8px 0 6px">Synthetic Urine</h3>
+              <p>Baseline matrix suitable for spiking analytes. Multiple formats available on request.</p>
+              <ul>
+                <li>Consistent background</li>
+                <li>Custom spike-ins</li>
+                <li>Study-ready labeling + documentation</li>
+              </ul>
+            </div>
+            <div class="price">Request quote</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product">
+            <div>
+              <div class="tag">Matrix</div>
+              <h3 style="margin:8px 0 6px">Synthetic CSF</h3>
+              <p>Engineered CSF-like matrix for development and verification workflows.</p>
+              <ul>
+                <li>Lot-to-lot continuity</li>
+                <li>Tailored targets + concentrations</li>
+                <li>Packaging options to fit your SOP</li>
+              </ul>
+            </div>
+            <div class="price">Request quote</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="how" class="section">
+      <h2>How it works</h2>
+      <div class="grid">
+        <div class="card"><h3>1) Tell us your use case</h3><p>Validation, PT, R&D, or workflow evaluation—plus target analytes and desired concentrations.</p></div>
+        <div class="card"><h3>2) Choose a base matrix</h3><p>Pick a standard material or request a formulation that matches your method constraints.</p></div>
+        <div class="card"><h3>3) Receive study-ready lots</h3><p>We ship with clear lot IDs and documentation so you can drop the material into your SOP.</p></div>
+      </div>
+    </div>
+
+    <div id="qa" class="section">
+      <h2>Quality + documentation</h2>
+      <div class="card">
+        <p style="margin:0 0 10px;color:var(--muted);line-height:1.65">
+          Every lot is traceable and built for repeatability. We package materials with clear identifiers and documentation suited to regulated and audit-sensitive workflows.
+        </p>
+        <ul>
+          <li><b>Lot traceability</b> with consistent labeling</li>
+          <li><b>COA / spec sheet</b> options per SKU</li>
+          <li><b>ISO 13485</b>: we can align documentation and controls to ISO 13485 expectations (confirm certification status before making public claims)</li>
+        </ul>
+        <p class="micro" style="margin-top:10px">If you are currently ISO 13485 certified, we can update this section to say “ISO 13485 certified” and add your certificate number + scope.</p>
+      </div>
+    </div>
+
+    <div id="quote" class="section">
+      <h2>Request a quote</h2>
+      <div class="card">
+        <p style="margin:0 0 10px;color:var(--muted)">Reply with: (1) matrix, (2) analytes + concentrations, (3) volume per unit, (4) number of units, (5) ship-to country.</p>
+        <p style="margin:0" class="micro">If you’re using Ecwid/Shopify, this CTA would link to a product catalog or a quote form.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      © TruSample — Draft landing page example. Replace placeholders with validated product specs and compliance language.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TruSample — ISO 13485 Certified Synthetic Reference Materials</title>
+  <style>
+    :root{
+      /* Palette tuned to current trusample.bio vibe: sage + slate + clean neutrals.
+         Burgundy is used as the brand accent (logo mark). */
+      --bg:#08111a;
+      --surface:#0f1c2b;
+      --surface2:#0c1724;
+      --text:#eef3ff;
+      --muted:#a7b6cf;
+      --border:rgba(255,255,255,.10);
+
+      --brand:#7b1436;      /* burgundy */
+      --brand2:#b93a61;     /* brighter burgundy */
+      --sage:#b5cfbd;       /* from site */
+      --sage2:#7e9773;      /* from site */
+      --cta:#1a7ac4;        /* from site */
+      --cta2:#59b7ff;
+
+      --shadow: 0 16px 55px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      color:var(--text);
+      background:
+        radial-gradient(1100px 650px at 15% 0%, rgba(26,122,196,.22), transparent 60%),
+        radial-gradient(900px 600px at 90% 10%, rgba(181,207,189,.18), transparent 60%),
+        radial-gradient(700px 420px at 70% 80%, rgba(123,20,54,.22), transparent 60%),
+        var(--bg);
+    }
+    a{color:inherit}
+    .container{max-width:1120px;margin:0 auto;padding:22px}
+
+    /* Top bar */
+    .top{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 0;
+      position:sticky;top:0;backdrop-filter:saturate(140%) blur(10px);
+      background:linear-gradient(to bottom, rgba(8,17,26,.78), rgba(8,17,26,.35));
+      border-bottom:1px solid rgba(255,255,255,.06);
+      z-index:10;
+    }
+    .brand{
+      display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px
+    }
+    .mark{
+      width:34px;height:34px;border-radius:12px;
+      background:linear-gradient(135deg, var(--brand2), var(--brand));
+      box-shadow: 0 14px 38px rgba(123,20,54,.25);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .nav{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+    .pill{padding:8px 12px;border-radius:999px;border:1px solid var(--border);text-decoration:none;color:var(--muted);background:rgba(255,255,255,.03)}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:14px;text-decoration:none;font-weight:800;
+      background:linear-gradient(135deg, var(--cta), var(--cta2));
+      color:#06111c;
+      box-shadow: 0 18px 40px rgba(26,122,196,.25);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .btn.secondary{
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      box-shadow:none;
+    }
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns: 1.2fr .8fr; gap:18px; padding:30px 0 6px}
+    h1{margin:0 0 10px;font-size:44px;line-height:1.06}
+    .sub{margin:0 0 14px;color:var(--muted);font-size:18px;line-height:1.55}
+    .trust{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 0}
+    .badge{font-size:12px;color:rgba(238,243,255,.85);border:1px solid var(--border);background:rgba(255,255,255,.03);padding:8px 10px;border-radius:999px}
+
+    .heroCard{
+      background:linear-gradient(180deg, rgba(15,28,43,.70), rgba(12,23,36,.55));
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow: var(--shadow);
+    }
+    .kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+    .kpi{border:1px solid rgba(255,255,255,.10);background:rgba(0,0,0,.18);border-radius:16px;padding:12px}
+    .kpi b{display:block}
+    .kpi span{color:var(--muted);font-size:12px}
+
+    /* Sections */
+    .section{margin:26px 0}
+    .section h2{margin:0 0 10px;font-size:26px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:16px}
+    .card h3{margin:0 0 8px}
+    .card p{margin:0;color:var(--muted);line-height:1.6}
+    ul{margin:10px 0 0 18px;color:var(--muted);line-height:1.7}
+
+    .callout{
+      background:linear-gradient(135deg, rgba(181,207,189,.10), rgba(123,20,54,.12));
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:20px;
+      padding:16px;
+    }
+    .split{display:grid;grid-template-columns: 1fr 1fr; gap:14px}
+
+    /* Product cards */
+    .prodTop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+    .tag{display:inline-block;font-size:12px;color:rgba(238,243,255,.85);border:1px solid rgba(255,255,255,.10);padding:4px 8px;border-radius:999px;background:rgba(0,0,0,.18)}
+    .ctaMini{font-weight:800;color:var(--sage);text-decoration:none}
+
+    /* Footer */
+    .footer{margin:34px 0 18px;color:rgba(167,182,207,.85);font-size:12px}
+
+    @media (max-width: 960px){
+      .hero{grid-template-columns:1fr}
+      .grid3{grid-template-columns:1fr}
+      .grid2{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+      h1{font-size:36px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="brand"><span class="mark" aria-hidden="true"></span> TruSample</div>
+      <div class="nav">
+        <a class="pill" href="#materials">Materials</a>
+        <a class="pill" href="#quality">Quality</a>
+        <a class="pill" href="#how">How it works</a>
+        <a class="btn" href="#quote">Request a quote</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div>
+        <h1>ISO 13485 certified synthetic reference materials—built for validation and scale.</h1>
+        <p class="sub">TruSample engineers consistent matrices (CSF, urine, and more) for assay validation, proficiency testing, and method development—so your team can move faster with fewer confounders and stronger traceability.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 10px">
+          <a class="btn" href="#quote">Get pricing + lead times</a>
+          <a class="btn secondary" href="#materials">Browse materials</a>
+          <a class="btn secondary" href="#quality">See documentation</a>
+        </div>
+        <div class="trust">
+          <span class="badge">ISO 13485 certified</span>
+          <span class="badge">Lot traceability</span>
+          <span class="badge">COA / spec sheets</span>
+          <span class="badge">Custom spike-ins</span>
+          <span class="badge">Distributor-ready</span>
+        </div>
+      </div>
+
+      <div class="heroCard">
+        <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start">
+          <div>
+            <h3 style="margin:0 0 6px">Enterprise-ready supply</h3>
+            <p style="margin:0;color:var(--muted);line-height:1.55">Designed for regulated workflows and repeatable results across teams, sites, and studies.</p>
+          </div>
+          <span class="tag">B2B</span>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><b>Consistency</b><span>Reduce lot-to-lot variability</span></div>
+          <div class="kpi"><b>Speed</b><span>Faster study setup and iteration</span></div>
+          <div class="kpi"><b>Control</b><span>Matrix tuned to your targets</span></div>
+          <div class="kpi"><b>Support</b><span>Scientist-to-scientist help</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Why teams switch to TruSample</h2>
+      <div class="grid3">
+        <div class="card"><h3>Cut rework</h3><p>Controlled background reduces confounders so your validation data is cleaner and more repeatable.</p></div>
+        <div class="card"><h3>Keep timelines</h3><p>Stable supply helps you plan studies without donor scarcity and last‑minute substitutions.</p></div>
+        <div class="card"><h3>Strengthen traceability</h3><p>Lot IDs and documentation support audit‑sensitive workflows and multi-site collaboration.</p></div>
+      </div>
+    </div>
+
+    <div id="materials" class="section">
+      <h2>Materials</h2>
+      <div class="grid2">
+        <div class="card">
+          <div class="prodTop">
+            <div>
+              <span class="tag">Matrix</span>
+              <h3 style="margin:10px 0 6px">Synthetic Urine</h3>
+              <p>Baseline matrix for spiking analytes and running repeatable validation studies.</p>
+              <ul>
+                <li>Custom concentrations and targets</li>
+                <li>Packaging options to match your SOP</li>
+                <li>Documentation package per SKU</li>
+              </ul>
+            </div>
+            <a class="ctaMini" href="#quote">Request quote →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="prodTop">
+            <div>
+              <span class="tag">Matrix</span>
+              <h3 style="margin:10px 0 6px">Synthetic CSF</h3>
+              <p>Engineered CSF-like matrix for method development, verification, and PT-style challenges.</p>
+              <ul>
+                <li>Lot continuity for longitudinal studies</li>
+                <li>Tailored analytes + concentrations</li>
+                <li>Study-ready labeling</li>
+              </ul>
+            </div>
+            <a class="ctaMini" href="#quote">Request quote →</a>
+          </div>
+        </div>
+      </div>
+      <div class="callout" style="margin-top:14px">
+        <b>Need a different matrix?</b>
+        <span style="color:var(--muted)"> Tell us your workflow and targets—TruSample can develop custom formulations for R&D, validation, and distribution programs.</span>
+      </div>
+    </div>
+
+    <div id="quality" class="section">
+      <h2>Quality + documentation</h2>
+      <div class="split">
+        <div class="card">
+          <h3>Designed for regulated environments</h3>
+          <p>TruSample is <b>ISO 13485 certified</b>. We support enterprise customers with controlled processes, traceability, and documentation packages appropriate to the product and use case.</p>
+          <ul>
+            <li>Lot traceability + consistent labeling</li>
+            <li>COA / spec sheets (per SKU)</li>
+            <li>Packaging options to support your SOP</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Trust signals to add (recommended)</h3>
+          <p>To make this truly “enterprise level,” add these items to the website once available:</p>
+          <ul>
+            <li>ISO certificate scope + certificate number (public)</li>
+            <li>Example COA (redacted) for a flagship SKU</li>
+            <li>Lead time + MOQ guidance for B2B buyers</li>
+            <li>Distributor program overview</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="how" class="section">
+      <h2>How it works</h2>
+      <div class="grid3">
+        <div class="card"><h3>1) Define your spec</h3><p>Matrix, targets/analytes, concentrations, volume, and storage constraints.</p></div>
+        <div class="card"><h3>2) Quote + timeline</h3><p>We confirm MOQ, pricing tiers, lead times, and documentation package.</p></div>
+        <div class="card"><h3>3) Receive study-ready lots</h3><p>Clear lot IDs, labeling, and documentation for quick SOP integration.</p></div>
+      </div>
+    </div>
+
+    <div id="quote" class="section">
+      <h2>Request a quote</h2>
+      <div class="card">
+        <p style="margin:0 0 10px;color:var(--muted)">Send these 5 details and we’ll respond fast:</p>
+        <ul>
+          <li>Matrix (urine, CSF, etc.)</li>
+          <li>Targets/analytes + concentrations</li>
+          <li>Volume per unit</li>
+          <li>Number of units / total volume</li>
+          <li>Ship-to country + timeline</li>
+        </ul>
+        <p style="margin:10px 0 0;color:rgba(167,182,207,.9)"><b>Email:</b> info@trusample.bio</p>
+      </div>
+    </div>
+
+    <div class="footer">© TruSample — Enterprise landing draft. Next: replace placeholders with your exact SKU list and add ISO certificate details + example COA.</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hernandez-server Monitor</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #eee;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2rem;
+            color: #f5a623;
+            margin-bottom: 5px;
+        }
+        .header .subtitle {
+            color: #888;
+            font-size: 0.9rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .card h2 {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .metric:last-child { border-bottom: none; }
+        .metric-label { color: #aaa; }
+        .metric-value { 
+            font-weight: 600; 
+            font-size: 1.1rem;
+            color: #4ade80;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        .progress-fill.cpu { background: linear-gradient(90deg, #4ade80, #22c55e); }
+        .progress-fill.mem { background: linear-gradient(90deg, #60a5fa, #3b82f6); }
+        .progress-fill.disk { background: linear-gradient(90deg, #f59e0b, #d97706); }
+        .big-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #f5a623;
+            line-height: 1;
+        }
+        .status-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+        .status-dot.online { background: #4ade80; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .process-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 0.85rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .process-name { 
+            color: #ddd; 
+            max-width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .process-cpu { color: #4ade80; width: 60px; text-align: right; }
+        .process-mem { color: #60a5fa; width: 60px; text-align: right; }
+        .process-cpu.hot { color: #f59e0b; }
+        .refresh-notice {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 0.8rem;
+        }
+        .network-item {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .network-item:last-child { border-bottom: none; }
+        .ip { font-family: monospace; color: #60a5fa; }
+        .fresh-boot { 
+            background: rgba(245, 166, 35, 0.2); 
+            border: 1px solid #f5a623;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #f5a623;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🪙 hernandez-server</h1>
+        <p class="subtitle"><span class="status-dot online"></span>System Monitor • 2026-01-27 05:05:20 UTC</p>
+    </div>
+
+    <div style="max-width: 1400px; margin: 0 auto;">
+        <div class="fresh-boot">⚡ Fresh boot detected — uptime only 2 minutes</div>
+    </div>
+
+    <div class="grid">
+        <!-- Uptime Card -->
+        <div class="card">
+            <h2>⏱️ Uptime</h2>
+            <div class="big-number">2m</div>
+            <div class="metric" style="margin-top: 15px;">
+                <span class="metric-label">Load Average</span>
+                <span class="metric-value">0.22, 0.13, 0.05</span>
+            </div>
+        </div>
+
+        <!-- CPU Card -->
+        <div class="card">
+            <h2>🔲 CPU</h2>
+            <div class="metric">
+                <span class="metric-label">AMD Ryzen 3 4100</span>
+                <span class="metric-value">2%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill cpu" style="width: 2%"></div>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Cores / Threads</span>
+                <span class="metric-value">4 / 8</span>
+            </div>
+        </div>
+
+        <!-- Memory Card -->
+        <div class="card">
+            <h2>💾 Memory</h2>
+            <div class="metric">
+                <span class="metric-label">Used / Total</span>
+                <span class="metric-value">1.2 GB / 32 GB</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill mem" style="width: 4%"></div>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Available</span>
+                <span class="metric-value">30 GB</span>
+            </div>
+        </div>
+
+        <!-- Disk Card -->
+        <div class="card">
+            <h2>💿 Disk</h2>
+            <div class="metric">
+                <span class="metric-label">Used / Total</span>
+                <span class="metric-value">17 GB / 57 GB</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill disk" style="width: 31%"></div>
+            </div>
+            <div class="metric">
+                <span class="metric-label">Available</span>
+                <span class="metric-value">38 GB</span>
+            </div>
+        </div>
+
+        <!-- Network Card -->
+        <div class="card">
+            <h2>🌐 Network</h2>
+            <div class="network-item">
+                <div class="metric-label">Interface</div>
+                <div class="ip">enp8s0</div>
+            </div>
+            <div class="network-item">
+                <div class="metric-label">Local IP</div>
+                <div class="ip">10.0.0.195</div>
+            </div>
+            <div class="network-item">
+                <div class="metric-label">Public IP</div>
+                <div class="ip">2601:740:8601:9e70::bbe9</div>
+            </div>
+        </div>
+
+        <!-- Top Processes Card -->
+        <div class="card">
+            <h2>📊 Top Processes</h2>
+            <div class="process-item">
+                <span class="process-name">clawdbot-gateway</span>
+                <span class="process-cpu hot">47.8%</span>
+                <span class="process-mem">1.2%</span>
+            </div>
+            <div class="process-item">
+                <span class="process-name">init</span>
+                <span class="process-cpu">0.9%</span>
+                <span class="process-mem">0.0%</span>
+            </div>
+            <div class="process-item">
+                <span class="process-name">snapd</span>
+                <span class="process-cpu">0.6%</span>
+                <span class="process-mem">0.1%</span>
+            </div>
+            <div class="process-item">
+                <span class="process-name">cups-browsed</span>
+                <span class="process-cpu">0.2%</span>
+                <span class="process-mem">0.0%</span>
+            </div>
+            <div class="process-item">
+                <span class="process-name">systemd-journald</span>
+                <span class="process-cpu">0.2%</span>
+                <span class="process-mem">0.0%</span>
+            </div>
+        </div>
+    </div>
+
+    <p class="refresh-notice">Last updated: 2026-01-27 05:05:20 UTC • Ask Tony to refresh</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+[2026-02-01T04:23:36-05:00]
+
+[2026-02-01T04:23:36-05:00]
+(watch.py signaled error; stderr was empty or not captured)
+
+[2026-02-01T08:00:09-05:00]
+(watch.py signaled error; stderr was empty or not captured)
+
+2026-02-01T15:28:44-05:00
+(no stderr captured; exit code was non-zero)
+
+[2026-02-01T19:00:41-05:00]
+(watch.py signaled error; stderr was empty or not captured)
+
+[2026-02-01T19:44:00-05:00]
+(watch.py signaled error; stderr was empty or not captured)
+
+2026-02-01T19:44:00-05:00
+(no stderr captured; watch.py exited non-zero)
+
+[2026-02-06T23:48:00-05:00]
+exec error: exec denied: allowlist miss
+
+[2026-02-06T23:49:00-05:00]
+exec error: exec host not allowed (requested sandbox; configure tools.exec.host=gateway to allow).
