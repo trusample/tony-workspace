@@ -1,0 +1,31 @@
+Reference_Type,Reference_ID,Title,Link,Status
+SOP,SOP-TS-010,eQMS Implementation Tracker Governance,,Pending
+SOP,SOP-TS-020,Change Control Procedure,,Pending
+SOP,SOP-TS-021,Management Actions & Reminders,,Pending
+SOP,SOP-TS-030,CRM Governance (Quotes/Orders/POs),,Pending
+SOP,SOP-TS-040,Shipment Workflow Procedure,,Pending
+SOP,SOP-TS-050,Document Indexing & Record Linking,,Pending
+SOP,SOP-TS-052,Batch Closeout Records,,Pending
+SOP,SOP-TS-060,Certificate of Analysis (COA) Generation,,Pending
+SOP,SOP-TS-070,Legal Document Control (Board Resolutions / MOUs),,Pending
+SOP,SOP-TS-080,RUO Product Governance (Synthetic Male AB Serum),,Pending
+FRM,FRM-TS-203,Change Log / Change Record,,Pending
+FRM,FRM-TS-204,Management Action Record,,Pending
+FRM,FRM-TS-205,Reminder Evidence / Notification Log,,Pending
+FRM,FRM-TS-301,CRM Quote Record,,Pending
+FRM,FRM-TS-302,CRM Order Record,,Pending
+FRM,FRM-TS-303,Blank PO Template,,Pending
+FRM,FRM-TS-501,Documents Index Schema,,Pending
+FRM,FRM-TS-504,Batch Close Report Template,,Pending
+FRM,FRM-TS-005,Lot Release Log,,Pending
+VAL,VAL-ENG-CHG-001,Change Control / Mgmt Action Implementation Validation,,Pending
+VAL,VAL-ENG-REM-001,Mgmt Action Reminder Validation,,Pending
+VAL,VAL-ENG-COA-001,COA Generator Validation,,Pending
+VAL,VAL-ENG-BATCH-001,Batch Closeout Validation,,Pending
+VAL,VAL-ENG-SHIP-001,Shipment Wizard Validation,,Pending
+VAL,VAL-ENG-RUO-001,RUO Decision + Claims Validation Basis,,Pending
+SCRIPT,menuCreateMgmtActionFromChange,Mgmt Action from Change Menu Function,,Pending
+SCRIPT,pcShowShipWorkflowWizardSidebar,Shipment Wizard Sidebar Function,,Pending
+SCRIPT,pcEnsureDocumentsIndexSheet_,Documents Index Builder Function,,Pending
+SCRIPT,menuGenerateCOAForLot,COA Menu Function,,Pending
+SCRIPT,generateCOAForLot_,COA Generator Core Function,,Pending

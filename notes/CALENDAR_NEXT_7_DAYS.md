@@ -1,6 +1,6 @@
 # Calendar next events (auto)
 
-Window (UTC): `2026-01-29T18:43:20Z` → `2026-02-05T18:43:20Z`
+Window (UTC): `2026-02-22T11:30:23Z` → `2026-03-01T11:30:23Z`
 
 Events: **0** (showing up to 50)
 

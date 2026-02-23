@@ -1,0 +1,16 @@
+Audit Pack Skeleton MANIFEST
+Timestamp: 2026-02-11T06:32:00Z
+Project: TruSample_eQMS
+Contents:
+- audit_report.md
+- evidence/
+  - documents_index_export.csv (placeholder)
+  - state_pack.json (copy included)
+  - COA_examples/
+  - BatchClose_examples/
+  - Validation/
+  - Change_Control/
+  - Training/
+- signoffs.md
+- internal_audit_checklist_filled.md
+Notes: Populate evidence/ with exported artifacts and update MANIFEST with actual file names and links.

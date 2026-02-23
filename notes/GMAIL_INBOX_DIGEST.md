@@ -2,125 +2,101 @@
 
 Query: `in:inbox is:unread`
 
-Unread found: **20** (showing up to 20)
+Unread found: **16** (showing up to 25)
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Thu, 29 Jan 2026 10:42:18 -0800
-- Message ID: `19c0b1039edbd6a0`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## "Interesting"
+- From: Reddit <noreply@redditmail.com>
+- Date: Sun, 22 Feb 2026 03:40:36 +0000
+- Message ID: `19c836f51efeb618`
+- Snippet: r/LocalLLaMA: Interesting I was just researching this for my Android. Trying to use &lt;1B. ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Thu, 29 Jan 2026 10:41:16 -0800
-- Message ID: `19c0b0f480475e9a`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## Re: Educational Internship
+- From: Obdulio Piloto <piloto@polarity-ventures.com>
+- Date: Tue, 17 Feb 2026 09:11:09 -0500 (EST)
+- Message ID: `19c6bf0ea845cac0`
+- Snippet: Please find attached the signed copy. Thanks Obdulio On 02/10/2026 12:03 PM EST Maykel Hernandez Garcia &lt;m.hernandez@trusample.bio&gt; wrote: Here is the attached executed document from Ruby&#39;s
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Thu, 29 Jan 2026 10:40:17 -0800
-- Message ID: `19c0b0e62fcd691a`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## [TruSample eQMS] OVERDUE: TS-EQMS-072 – Instrumentation needs register (RUO build)
+- From: team_iso@trusample.bio
+- Date: Mon, 16 Feb 2026 06:37:49 -0800
+- Message ID: `19c66e2e4fb61442`
+- Snippet: Owner, Automated eQMS reminder. Step ID: TS-EQMS-072 Step Name: Instrumentation needs register (RUO build) Status: In Progress Due Date: Wed Dec 17 2025 Please update the step or attach evidence as
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Thu, 29 Jan 2026 10:39:16 -0800
-- Message ID: `19c0b0d7311276e6`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## [TruSample eQMS] OVERDUE: TS-EQMS-080 – Training matrix placeholder
+- From: team_iso@trusample.bio
+- Date: Mon, 16 Feb 2026 14:37:50 +0000
+- Message ID: `19c66e2e3ed7154a`
+- Snippet: Owner, Automated eQMS reminder. Step ID: TS-EQMS-080 Step Name: Training matrix placeholder Status: In Progress Due Date: Thu Dec 18 2025 Please update the step or attach evidence as required. —
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Thu, 29 Jan 2026 10:38:16 -0800
-- Message ID: `19c0b0c8a8fedf0c`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## [TruSample eQMS] OVERDUE: TS-EQMS-060 – SOP: Thawing disease-state plasma (Phase style)
+- From: team_iso@trusample.bio
+- Date: Mon, 16 Feb 2026 06:37:49 -0800
+- Message ID: `19c66e2e15d3fba2`
+- Snippet: Owner, Automated eQMS reminder. Step ID: TS-EQMS-060 Step Name: SOP: Thawing disease-state plasma (Phase style) Status: In Progress Due Date: Sun Dec 21 2025 Please update the step or attach evidence
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Thu, 29 Jan 2026 10:37:17 -0800
-- Message ID: `19c0b0ba1dc16e99`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## [TruSample eQMS] OVERDUE: TS-EQMS-042 – COA validation (positive + negative cases)
+- From: team_iso@trusample.bio
+- Date: Mon, 16 Feb 2026 06:37:49 -0800
+- Message ID: `19c66e2e0207e77c`
+- Snippet: Owner, Automated eQMS reminder. Step ID: TS-EQMS-042 Step Name: COA validation (positive + negative cases) Status: In Progress Due Date: Thu Dec 18 2025 Please update the step or attach evidence as
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Thu, 29 Jan 2026 10:36:17 -0800
-- Message ID: `19c0b0ab75298246`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## [TruSample eQMS] OVERDUE: TS-EQMS-003 – Immutable Completed_History audit log
+- From: team_iso@trusample.bio
+- Date: Mon, 16 Feb 2026 06:37:44 -0800
+- Message ID: `19c66e2cd6ea2041`
+- Snippet: Owner, Automated eQMS reminder. Step ID: TS-EQMS-003 Step Name: Immutable Completed_History audit log Status: In Progress Due Date: Sun Dec 21 2025 Please update the step or attach evidence as required
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:26:16 -0800
-- Message ID: `19bfa44e23c06581`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## [TruSample eQMS] OVERDUE: TS-EQMS-013 – Reminder validation scenario executed
+- From: team_iso@trusample.bio
+- Date: Mon, 16 Feb 2026 09:37:44 -0500
+- Message ID: `19c66e2cce8fdb91`
+- Snippet: Owner, Automated eQMS reminder. Step ID: TS-EQMS-013 Step Name: Reminder validation scenario executed Status: In Progress Due Date: Wed Dec 17 2025 Please update the step or attach evidence as required
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:25:17 -0800
-- Message ID: `19bfa43fc13866c3`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## [TruSample eQMS] OVERDUE: TS-EQMS-002 – Reference Map + controlled vocabulary
+- From: team_iso@trusample.bio
+- Date: Mon, 16 Feb 2026 06:37:43 -0800
+- Message ID: `19c66e2cb82170b1`
+- Snippet: Owner, Automated eQMS reminder. Step ID: TS-EQMS-002 Step Name: Reference Map + controlled vocabulary Status: In Progress Due Date: Thu Dec 18 2025 Please update the step or attach evidence as required
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:24:17 -0800
-- Message ID: `19bfa430fa3193e4`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## [TruSample eQMS] OVERDUE: TS-EQMS-001 – Create core eQMS tab structure (Master Steps, History, Assignable View, Reference Map, Automation Index)
+- From: team_iso@trusample.bio
+- Date: Mon, 16 Feb 2026 06:37:43 -0800
+- Message ID: `19c66e2cb659be40`
+- Snippet: Owner, Automated eQMS reminder. Step ID: TS-EQMS-001 Step Name: Create core eQMS tab structure (Master Steps, History, Assignable View, Reference Map, Automation Index) Status: In Progress Due Date:
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:23:18 -0800
-- Message ID: `19bfa422af64b9ee`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## Hey, we have a question for you 🤔
+- From: Canva <marketing@engage.canva.com>
+- Date: Sat, 14 Feb 2026 15:31:30 +0000 (UTC)
+- Message ID: `19c5cc74d1afb5a7`
+- Snippet: It only takes seconds to personalize your experience ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌
 
-## Summary of failures for Google Apps Script:  eQMS Governance
+## Summary of failures for Google Apps Script: BrandPack script project
 - From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:22:16 -0800
-- Message ID: `19bfa4139bbd28d0`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+- Date: Sat, 14 Feb 2026 00:55:18 -0800
+- Message ID: `19c5b5c918d81266`
+- Snippet: Your script, BrandPack script project, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:21:18 -0800
-- Message ID: `19bfa4055999604a`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## Welcome to Tailscale! Let's get started
+- From: Team Tailscale <trial@tailscale.com>
+- Date: Sat, 14 Feb 2026 05:52:58 GMT
+- Message ID: `19c5ab59e2eae35b`
+- Snippet: Securely connect your cloud VM in minutes. Welcome to Tailscale - activate your tailnet Hi there, Welcome to Tailscale! You have officially started your 14-day trial. Let&#39;s get you up and running
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:20:16 -0800
-- Message ID: `19bfa3f64a1e5ab9`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## 🎤 Pass the Mic, Tamon’s B-Side Hits Center Stage
+- From: Crunchyroll <hello@mail.crunchyroll.com>
+- Date: Sat, 14 Feb 2026 01:08:28 +0000 (UTC)
+- Message ID: `19c59b129939bad6`
+- Snippet: Enter a story of a somber star and a devoted fan. ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:19:17 -0800
-- Message ID: `19bfa3e7da029955`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## Address needed - important policy documents returned
+- From: Progressive <customerservice@e.progressive.com>
+- Date: Fri, 13 Feb 2026 15:16:45 -0600
+- Message ID: `19c58dd1d9c231cc`
+- Snippet: The US Postal Service returned a document that we mailed to you for your vehicle insurance policy. Please check your mailing address Recently, the US Postal Service returned mail that we sent for your
 
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:18:16 -0800
-- Message ID: `19bfa3d906f1d02a`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
-
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:17:16 -0800
-- Message ID: `19bfa3ca7c5c3acf`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
-
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:16:16 -0800
-- Message ID: `19bfa3bba24e0035`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
-
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:15:16 -0800
-- Message ID: `19bfa3ad0c149fb9`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
-
-## Summary of failures for Google Apps Script:  eQMS Governance
-- From: noreply-apps-scripts-notifications@google.com
-- Date: Mon, 26 Jan 2026 04:14:17 -0800
-- Message ID: `19bfa39e852e449c`
-- Snippet: Your script, eQMS Governance, has recently failed to finish successfully. A summary of the failure(s) is shown below. To configure the triggers for this script, or change your setting for receiving
+## "THESE NEW LIMITS SUCK"
+- From: Reddit <noreply@redditmail.com>
+- Date: Fri, 13 Feb 2026 03:47:48 +0000
+- Message ID: `19c551cb01abf330`
+- Snippet: r/GeminiAI: THESE NEW LIMITS SUCK It&#39;s like Google doesn&#39;t actually want people to use Gemini anymore. So, on top of terrible performance today, I get to wait another two hours to use the Pro
 

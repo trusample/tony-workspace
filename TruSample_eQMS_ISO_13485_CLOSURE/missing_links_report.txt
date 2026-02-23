@@ -1,0 +1,47 @@
+Missing Links Report — Reference_Map entries with empty Link
+Generated: 2026-02-11T06:30:00Z
+Source: STATE_PACK_REL-20251231-0146.json (mounted copy)
+
+All entries below have an empty Link field and should be populated with the Google Drive/Doc URL or local path.
+
+SOPs:
+- SOP-TS-010: eQMS Implementation Tracker Governance
+- SOP-TS-020: Change Control Procedure
+- SOP-TS-021: Management Actions & Reminders
+- SOP-TS-030: CRM Governance (Quotes/Orders/POs)
+- SOP-TS-040: Shipment Workflow Procedure
+- SOP-TS-050: Document Indexing & Record Linking
+- SOP-TS-052: Batch Closeout Records
+- SOP-TS-060: Certificate of Analysis (COA) Generation
+- SOP-TS-070: Legal Document Control (Board Resolutions / MOUs)
+- SOP-TS-080: RUO Product Governance (Synthetic Male AB Serum)
+
+FRMs (Forms/Templates):
+- FRM-TS-203: Change Log / Change Record
+- FRM-TS-204: Management Action Record
+- FRM-TS-205: Reminder Evidence / Notification Log
+- FRM-TS-301: CRM Quote Record
+- FRM-TS-302: CRM Order Record
+- FRM-TS-303: Blank PO Template
+- FRM-TS-501: Documents Index Schema
+- FRM-TS-504: Batch Close Report Template
+- FRM-TS-005: Lot Release Log
+
+VALIDATIONS:
+- VAL-ENG-CHG-001: Change Control / Mgmt Action Implementation Validation
+- VAL-ENG-REM-001: Mgmt Action Reminder Validation
+- VAL-ENG-COA-001: COA Generator Validation
+- VAL-ENG-BATCH-001: Batch Closeout Validation
+- VAL-ENG-SHIP-001: Shipment Wizard Validation
+- VAL-ENG-RUO-001: RUO Decision + Claims Validation Basis
+
+SCRIPTS (document source or code repo pointers required):
+- menuCreateMgmtActionFromChange
+- pcShowShipWorkflowWizardSidebar
+- pcEnsureDocumentsIndexSheet_
+- menuGenerateCOAForLot
+- generateCOAForLot_
+
+Notes:
+- Some Evidence_Link fields in eQMS_Master_Steps are also empty (e.g., many VAL entries). Recommend attaching exported PDF or docx proof of validation runs and screenshots.
+- Next action: populate Reference_Map Link with Google Drive URLs. Consider adding a column 'Suggested_Path' with recommended folder location under /TruSample/eQMS for each item.

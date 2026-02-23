@@ -9,14 +9,14 @@ Projects found: **6**
 
 | file | match | snippet |
 |---|---|---|
-| `Code` | `Management` | arent.createFolder("04 – Validation");   folders["05 – Risk Management"]           = parent.createFolder("05 – Risk Management");  |
-| `Code` | `Management` | isk Management"]           = parent.createFolder("05 – Risk Management");   folders["06 – Stability & Commutability"] = parent.cre |
-| `Code` | `Management` | ion",     "Validation Summary Report"   ]);    // 05 – Risk Management   addSubs(folders["05 – Risk Management"], [     "RMA-HbA1c |
-| `Code` | `Management` | ]);    // 05 – Risk Management   addSubs(folders["05 – Risk Management"], [     "RMA-HbA1c-001 – Risk Analysis",     "FMEA",     " |
-| `Code` | `Management` | );   var risk      = getOrCreateSubFolder_(root, "05 – Risk Management");   var stab      = getOrCreateSubFolder_(root, "06 – Stab |
-| `Code` | `Action` | , Date, Reporter, Description, Impact Assessment, Immediate Actions, Root Cause, Corrective Actions, Preventive Actions, Closu |
-| `Code` | `Action` | mpact Assessment, Immediate Actions, Root Cause, Corrective Actions, Preventive Actions, Closure.\n"   );    // Training / Com |
-| `Code` | `Action` | mediate Actions, Root Cause, Corrective Actions, Preventive Actions, Closure.\n"   );    // Training / Competency Assessment T |
+| `{fname}` | `{match}` | arent.createFolder("04 – Validation");   folders["05 – Risk Management"]           = parent.createFolder("05 – Risk Management");  |
+| `{fname}` | `{match}` | isk Management"]           = parent.createFolder("05 – Risk Management");   folders["06 – Stability & Commutability"] = parent.cre |
+| `{fname}` | `{match}` | ion",     "Validation Summary Report"   ]);    // 05 – Risk Management   addSubs(folders["05 – Risk Management"], [     "RMA-HbA1c |
+| `{fname}` | `{match}` | ]);    // 05 – Risk Management   addSubs(folders["05 – Risk Management"], [     "RMA-HbA1c-001 – Risk Analysis",     "FMEA",     " |
+| `{fname}` | `{match}` | );   var risk      = getOrCreateSubFolder_(root, "05 – Risk Management");   var stab      = getOrCreateSubFolder_(root, "06 – Stab |
+| `{fname}` | `{match}` | , Date, Reporter, Description, Impact Assessment, Immediate Actions, Root Cause, Corrective Actions, Preventive Actions, Closu |
+| `{fname}` | `{match}` | mpact Assessment, Immediate Actions, Root Cause, Corrective Actions, Preventive Actions, Closure.\n"   );    // Training / Com |
+| `{fname}` | `{match}` | mediate Actions, Root Cause, Corrective Actions, Preventive Actions, Closure.\n"   );    // Training / Competency Assessment T |
 
 ## CRM SHEET - TruSample
 - projectId: `1yDT7YEpAVx3OUnSBjxqTgd4OyS0XKaV0-RX4R-dnOI6vcHG2SFzSVK0e`
@@ -25,40 +25,40 @@ Projects found: **6**
 
 | file | match | snippet |
 |---|---|---|
-| `Permissions` | `Management` | ;  const PERMISSION_MATRIX = {   'ADMIN': {     // User Management     'user.create': true,     'user.assign_role': true,   |
-| `Permissions` | `Management` | : true,     'activity.delete': true,          // Product Management     'product.create': true,     'product.edit': true,    |
-| `Permissions` | `Management` | audit.export': true   },      'APPROVER': {     // User Management     'user.create': false,     'user.assign_role': false, |
-| `Permissions` | `Management` |  true,     'activity.delete': false,          // Product Management     'product.create': false,     'product.edit': false,  |
-| `Permissions` | `Management` |  'audit.export': false   },      'SALES': {     // User Management     'user.create': false,     'user.assign_role': false, |
-| `Permissions` | `Management` |  true,     'activity.delete': false,          // Product Management     'product.create': false,     'product.edit': false,  |
-| `Permissions` | `Management` | port': false   },      'PRODUCT_MANAGER': {     // User Management     'user.create': false,     'user.assign_role': false, |
-| `Permissions` | `Management` | false,     'activity.delete': false,          // Product Management     'product.create': true,     'product.edit': true,    |
-| `Permissions` | `Management` | 'audit.export': false   },      'VIEWER': {     // User Management     'user.create': false,     'user.assign_role': false, |
-| `Permissions` | `Management` |  true,     'activity.delete': false,          // Product Management     'product.create': false,     'product.edit': false,  |
-| `Permissions` | `action` |  }  /**  * Check if a user has permission to perform an action  * @param {string} userEmail - User email address  * @par |
-| `Permissions` | `action` | {string} userEmail - User email address  * @param {string} action - Action to check (e.g., 'quote.create', 'order.approve')  |
-| `Permissions` | `Action` | userEmail - User email address  * @param {string} action - Action to check (e.g., 'quote.create', 'order.approve')  * @retur |
-| `Permissions` | `action` | , false otherwise  */ function checkPermission(userEmail, action) {   const role = getUserRole(userEmail);      if (!role |
-| `Permissions` | `action` | r inactive - log denial     logPermissionDenial(userEmail, action, 'User not found or inactive');     return false;   }    |
-| `Permissions` | `action` |    if (!permissions) {     logPermissionDenial(userEmail, action, 'Invalid role: ' + role);     return false;   }      c |
-| `Permissions` | `action` | return false;   }      const hasPermission = permissions[action] === true;      if (!hasPermission) {     logPermissionD |
-| `Permissions` | `action` |   if (!hasPermission) {     logPermissionDenial(userEmail, action, 'Permission denied for role: ' + role);   }      return |
-| `Permissions` | `action` | ing  *   * @param {string} userEmail - User who attempted action  * @param {string} action - Action attempted  * @param {s |
-| `Permissions` | `action` | } userEmail - User who attempted action  * @param {string} action - Action attempted  * @param {string} reason - Reason for  |
-| `Permissions` | `Action` | il - User who attempted action  * @param {string} action - Action attempted  * @param {string} reason - Reason for denial   |
-| `Permissions` | `action` | on for denial  */ function logPermissionDenial(userEmail, action, reason) {   try {     const ss = SpreadsheetApp.openById |
-| `Permissions` | `action` | stamp,       'PERMISSION_DENIED',       userEmail,       action,       reason,       'SYSTEM'     ];          auditShe |
-| `Permissions` | `action` | ations  *   * @param {string} userEmail - User performing action  * @param {string} action - Action performed  * @param {s |
-| `Permissions` | `action` | ing} userEmail - User performing action  * @param {string} action - Action performed  * @param {string} details - Additional |
-| `Permissions` | `Action` | Email - User performing action  * @param {string} action - Action performed  * @param {string} details - Additional details |
-| `Permissions` | `action` | onal details  */ function logPermissionAllowed(userEmail, action, details) {   try {     const ss = SpreadsheetApp.openByI |
-| `Permissions` | `action` | tamp,       'PERMISSION_ALLOWED',       userEmail,       action,       details,       'SYSTEM'     ];          auditSh |
-| `Permissions` | `action` | only)  * @param {string} adminEmail - Admin performing the action  * @param {string} targetEmail - User to assign role to   |
-| `Permissions` | `action` | ; // Update role in column B                  // Log this action to audit         logPermissionAllowed(adminEmail, 'user.as |
-| `Permissions` | `action` |  a guard at the start of functions  *   * @param {string} action - Action to validate  * @returns {boolean} - True if user  |
-| `Permissions` | `Action` | at the start of functions  *   * @param {string} action - Action to validate  * @returns {boolean} - True if user has permi |
-| `Permissions` | `action` | f user has permission  */ function validateUserPermission(action) {   const userEmail = Session.getActiveUser().getEmail(); |
-| `Permissions` | `action` | tiveUser().getEmail();   return checkPermission(userEmail, action); }  /**  * Get current user's role  * @returns {strin |
+| `{fname}` | `{match}` | ;  const PERMISSION_MATRIX = {   'ADMIN': {     // User Management     'user.create': true,     'user.assign_role': true,   |
+| `{fname}` | `{match}` | : true,     'activity.delete': true,          // Product Management     'product.create': true,     'product.edit': true,    |
+| `{fname}` | `{match}` | audit.export': true   },      'APPROVER': {     // User Management     'user.create': false,     'user.assign_role': false, |
+| `{fname}` | `{match}` |  true,     'activity.delete': false,          // Product Management     'product.create': false,     'product.edit': false,  |
+| `{fname}` | `{match}` |  'audit.export': false   },      'SALES': {     // User Management     'user.create': false,     'user.assign_role': false, |
+| `{fname}` | `{match}` |  true,     'activity.delete': false,          // Product Management     'product.create': false,     'product.edit': false,  |
+| `{fname}` | `{match}` | port': false   },      'PRODUCT_MANAGER': {     // User Management     'user.create': false,     'user.assign_role': false, |
+| `{fname}` | `{match}` | false,     'activity.delete': false,          // Product Management     'product.create': true,     'product.edit': true,    |
+| `{fname}` | `{match}` | 'audit.export': false   },      'VIEWER': {     // User Management     'user.create': false,     'user.assign_role': false, |
+| `{fname}` | `{match}` |  true,     'activity.delete': false,          // Product Management     'product.create': false,     'product.edit': false,  |
+| `{fname}` | `{match}` |  }  /**  * Check if a user has permission to perform an action  * @param {string} userEmail - User email address  * @par |
+| `{fname}` | `{match}` | {string} userEmail - User email address  * @param {string} action - Action to check (e.g., 'quote.create', 'order.approve')  |
+| `{fname}` | `{match}` | userEmail - User email address  * @param {string} action - Action to check (e.g., 'quote.create', 'order.approve')  * @retur |
+| `{fname}` | `{match}` | , false otherwise  */ function checkPermission(userEmail, action) {   const role = getUserRole(userEmail);      if (!role |
+| `{fname}` | `{match}` | r inactive - log denial     logPermissionDenial(userEmail, action, 'User not found or inactive');     return false;   }    |
+| `{fname}` | `{match}` |    if (!permissions) {     logPermissionDenial(userEmail, action, 'Invalid role: ' + role);     return false;   }      c |
+| `{fname}` | `{match}` | return false;   }      const hasPermission = permissions[action] === true;      if (!hasPermission) {     logPermissionD |
+| `{fname}` | `{match}` |   if (!hasPermission) {     logPermissionDenial(userEmail, action, 'Permission denied for role: ' + role);   }      return |
+| `{fname}` | `{match}` | ing  *   * @param {string} userEmail - User who attempted action  * @param {string} action - Action attempted  * @param {s |
+| `{fname}` | `{match}` | } userEmail - User who attempted action  * @param {string} action - Action attempted  * @param {string} reason - Reason for  |
+| `{fname}` | `{match}` | il - User who attempted action  * @param {string} action - Action attempted  * @param {string} reason - Reason for denial   |
+| `{fname}` | `{match}` | on for denial  */ function logPermissionDenial(userEmail, action, reason) {   try {     const ss = SpreadsheetApp.openById |
+| `{fname}` | `{match}` | stamp,       'PERMISSION_DENIED',       userEmail,       action,       reason,       'SYSTEM'     ];          auditShe |
+| `{fname}` | `{match}` | ations  *   * @param {string} userEmail - User performing action  * @param {string} action - Action performed  * @param {s |
+| `{fname}` | `{match}` | ing} userEmail - User performing action  * @param {string} action - Action performed  * @param {string} details - Additional |
+| `{fname}` | `{match}` | Email - User performing action  * @param {string} action - Action performed  * @param {string} details - Additional details |
+| `{fname}` | `{match}` | onal details  */ function logPermissionAllowed(userEmail, action, details) {   try {     const ss = SpreadsheetApp.openByI |
+| `{fname}` | `{match}` | tamp,       'PERMISSION_ALLOWED',       userEmail,       action,       details,       'SYSTEM'     ];          auditSh |
+| `{fname}` | `{match}` | only)  * @param {string} adminEmail - Admin performing the action  * @param {string} targetEmail - User to assign role to   |
+| `{fname}` | `{match}` | ; // Update role in column B                  // Log this action to audit         logPermissionAllowed(adminEmail, 'user.as |
+| `{fname}` | `{match}` |  a guard at the start of functions  *   * @param {string} action - Action to validate  * @returns {boolean} - True if user  |
+| `{fname}` | `{match}` | at the start of functions  *   * @param {string} action - Action to validate  * @returns {boolean} - True if user has permi |
+| `{fname}` | `{match}` | f user has permission  */ function validateUserPermission(action) {   const userEmail = Session.getActiveUser().getEmail(); |
+| `{fname}` | `{match}` | tiveUser().getEmail();   return checkPermission(userEmail, action); }  /**  * Get current user's role  * @returns {strin |
 
 ## Creates all core Docs & Sheets templates
 - projectId: `1PYPNY3FjcC03SQqdACKxVXho-47p2Zxvl_82OBYyakrdCIxBmw2IDicP`
@@ -72,16 +72,16 @@ Projects found: **6**
 
 | file | match | snippet |
 |---|---|---|
-| `Code` | `trigger` | ndoff version doc link  *  * Safe: manual run OR time-based trigger (optional).  * Deterministic: uses folder IDs (recommended) |
-| `Code` | `Trigger` | .  * (Lightweight, safe)  */ function setupHandoffIndexDailyTrigger() {   removeHandoffIndexTriggers_();   ScriptApp.newTrigger |
-| `Code` | `Trigger` | ction setupHandoffIndexDailyTrigger() {   removeHandoffIndexTriggers_();   ScriptApp.newTrigger("updateHandoffIndexLatestLinks" |
-| `Code` | `ScriptApp.newTrigger` | offIndexDailyTrigger() {   removeHandoffIndexTriggers_();   ScriptApp.newTrigger("updateHandoffIndexLatestLinks")     .timeBased()     .ever |
-| `Code` | `timeBased` |  ScriptApp.newTrigger("updateHandoffIndexLatestLinks")     .timeBased()     .everyDays(1)     .atHour(6)     .create(); }  functi |
-| `Code` | `Trigger` |    .atHour(6)     .create(); }  function disableHandoffIndexTriggers() {   removeHandoffIndexTriggers_(); }  function removeHan |
-| `Code` | `Trigger` | unction disableHandoffIndexTriggers() {   removeHandoffIndexTriggers_(); }  function removeHandoffIndexTriggers_() {   ScriptAp |
-| `Code` | `Trigger` | emoveHandoffIndexTriggers_(); }  function removeHandoffIndexTriggers_() {   ScriptApp.getProjectTriggers().forEach(function (t) |
-| `Code` | `Trigger` | ction removeHandoffIndexTriggers_() {   ScriptApp.getProjectTriggers().forEach(function (t) {     if (t.getHandlerFunction() == |
-| `Code` | `Trigger` | tion() === "updateHandoffIndexLatestLinks") ScriptApp.deleteTrigger(t);   }); }  /** ===================== Helpers ============ |
+| `{fname}` | `{match}` | ndoff version doc link  *  * Safe: manual run OR time-based trigger (optional).  * Deterministic: uses folder IDs (recommended) |
+| `{fname}` | `{match}` | .  * (Lightweight, safe)  */ function setupHandoffIndexDailyTrigger() {   removeHandoffIndexTriggers_();   ScriptApp.newTrigger |
+| `{fname}` | `{match}` | ction setupHandoffIndexDailyTrigger() {   removeHandoffIndexTriggers_();   ScriptApp.newTrigger("updateHandoffIndexLatestLinks" |
+| `{fname}` | `{match}` | offIndexDailyTrigger() {   removeHandoffIndexTriggers_();   ScriptApp.newTrigger("updateHandoffIndexLatestLinks")     .timeBased()     .ever |
+| `{fname}` | `{match}` |  ScriptApp.newTrigger("updateHandoffIndexLatestLinks")     .timeBased()     .everyDays(1)     .atHour(6)     .create(); }  functi |
+| `{fname}` | `{match}` |    .atHour(6)     .create(); }  function disableHandoffIndexTriggers() {   removeHandoffIndexTriggers_(); }  function removeHan |
+| `{fname}` | `{match}` | unction disableHandoffIndexTriggers() {   removeHandoffIndexTriggers_(); }  function removeHandoffIndexTriggers_() {   ScriptAp |
+| `{fname}` | `{match}` | emoveHandoffIndexTriggers_(); }  function removeHandoffIndexTriggers_() {   ScriptApp.getProjectTriggers().forEach(function (t) |
+| `{fname}` | `{match}` | ction removeHandoffIndexTriggers_() {   ScriptApp.getProjectTriggers().forEach(function (t) {     if (t.getHandlerFunction() == |
+| `{fname}` | `{match}` | tion() === "updateHandoffIndexLatestLinks") ScriptApp.deleteTrigger(t);   }); }  /** ===================== Helpers ============ |
 
 ## TECH_STACK_AutoCheckpoint
 - projectId: `1jH7pB3Vn0bu9K5Xmz7TqEXsh4YDuaazwJGRh4BsWIvq4-DFtwNop-LN2`
@@ -90,7 +90,7 @@ Projects found: **6**
 
 | file | match | snippet |
 |---|---|---|
-| `Code` | `trigger` | oint  *  * Manual snapshot of /TECH_STACK/_handoff.md  * No triggers. No sheet dependencies.  ********************************* |
+| `{fname}` | `{match}` | oint  *  * Manual snapshot of /TECH_STACK/_handoff.md  * No triggers. No sheet dependencies.  ********************************* |
 
 ## Untitled project
 - projectId: `1qKYlqKWH4Cpjh_NgDfA_G3qE-uX0d6EATZBZ2a-QtFIfVkiIcqTfQjYD`
