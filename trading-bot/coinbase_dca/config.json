@@ -1,13 +1,13 @@
 {
     "product_id": "SOL-USD",
     "mode": "paper",
-    "buy_usd": 2.0,
-    "max_buy_usd_per_day": 2.0,
-    "max_buy_usd_per_week": 14.0,
+    "buy_usd": 5.0,
+    "max_buy_usd_per_day": 5.0,
+    "max_buy_usd_per_week": 35.0,
     "trend_ma_days": 0,
     "timezone": "America/New_York",
     "run_time_local": "09:05",
     "scalp_enabled": true,
-    "scalp_amount_usd": 5.0,
-    "notes": "Phase 2: DCA + Active Scalp (RSI<30, VWAP, Volume)"
+    "scalp_amount_usd": 20.0,
+    "notes": "Phase 2 AGGRESSIVE: $100 capital - DCA $5/day + Scalp $20/crash"
 }
