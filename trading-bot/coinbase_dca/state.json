@@ -1,13 +1,12 @@
 {
-  "last_run": "2026-02-01T14:05:23.977867+00:00",
-  "paper": {
-    "asset": "BTC",
-    "asset_qty": 2.5640746e-05,
-    "avg_cost_usd": 78000.85,
-    "cash_usd": 98.0
-  },
-  "weekly_spend": {
-    "spent_usd": 2.0,
-    "week_start": "2026-01-26T00:00:00+00:00"
-  }
+    "cash": 16.00,
+    "holdings": 0.0513,
+    "total_invested": 4.00,
+    "trade_count": 3,
+    "last_buy_date": "2026-02-23",
+    "scalp": {
+        "position_size": 0,
+        "last_trade_date": null,
+        "status": "IDLE"
+    }
 }

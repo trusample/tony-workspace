@@ -2,13 +2,19 @@
 
 Query: `in:inbox is:unread`
 
-Unread found: **16** (showing up to 25)
+Unread found: **17** (showing up to 25)
 
-## "Interesting"
-- From: Reddit <noreply@redditmail.com>
-- Date: Sun, 22 Feb 2026 03:40:36 +0000
-- Message ID: `19c836f51efeb618`
-- Snippet: r/LocalLLaMA: Interesting I was just researching this for my Android. Trying to use &lt;1B. ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌
+## [GitHub] A personal access token (classic) has been added to your account
+- From: GitHub <noreply@github.com>
+- Date: Sun, 22 Feb 2026 22:25:48 -0800
+- Message ID: `19c892cece85072b`
+- Snippet: Hey trusample! A personal access token (classic) &quot;hernandez-server-tony&quot; with repo scope was recently added to your account. Visit https://github.com/settings/tokens for more information. To
+
+## [GitHub] A new public key was added to trusample/ai-workspace
+- From: GitHub <noreply@github.com>
+- Date: Sun, 22 Feb 2026 21:41:07 -0800
+- Message ID: `19c890404b5fd629`
+- Snippet: The following SSH key was added to the trusample/ai-workspace repository by trusample: hernandez-server-tony SHA256:8XadYOX8ODQWSkVdJm1Y8UzPSLuKJaF5DnIC5DCMKeE If you believe this key was added in
 
 ## Re: Educational Internship
 - From: Obdulio Piloto <piloto@polarity-ventures.com>
